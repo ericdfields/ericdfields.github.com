@@ -1,0 +1,16 @@
+.steve {
+  background: #1D1D1D;
+  $color: #EDEDED;
+  color: $color;
+  h1,h2 {
+    color: #FDFDFD; 
+  }
+  article {
+    .byline {
+      color: darken($color,13%);
+    }
+    a {
+      @include link-colors(#FBFBFB,#FBFBFB,#FBFBFB,#FBFBFB);
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@mixin respond-to($media) {
+	@if $media == tablet {
+		@media screen and (min-width:600px) {
+      @content;
+    }
+	}
+	@if $media == desktop {
+		@media screen and (min-width:1000px) {
+      @content;
+    }
+	}
+	@if $media == wide {
+		@media screen and (min-width:1250px) {
+      @content;
+    }
+	}
+}

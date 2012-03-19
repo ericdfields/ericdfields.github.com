@@ -1,0 +1,73 @@
+@import "zocial";
+
+@include zocial-twitter;
+@include zocial-dribbble;
+@include zocial-pinboard;
+@include zocial-linkedin;
+@include zocial-github;
+@include zocial-lastfm;
+
+#social {
+  @include background(linear-gradient(#fff,#e6e6e6));
+  border: solid rgba(0,0,0,.2);
+  border-width: 1px 0;
+  h2 {
+    text-align: center;
+  }
+  .fontface & {
+    ul {
+      @include no-bullets;
+      @include clearfix;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 2em;
+    }
+    li {
+      display: block;
+      width: 25%;
+      float: left;
+      @include respond-to(tablet) {
+        width: 14.28571%
+      }
+    }
+    a {
+      display: block;
+      @include border-radius(1em);
+      // padding: .35em;
+      text-decoration: none;
+      text-shadow: rgba(255,255,255,1) 0 2px 0;
+      @include transition(125ms ease-in);
+      text-align: center;
+      font-size: 48px;
+      font-family: zocial;
+      color: rgba(0,0,0,.35);
+      &:hover {
+        text-shadow: rgba(255,255,255,1) 0 2px 10px;
+      }
+    }
+    span {
+      display: none;
+    }
+    .twitter a:hover {
+      color: #46c0fb;
+    }
+    .linkedin a:hover {
+      color: #0083a8;
+    }
+    .dribbble a:hover {
+      color: #ea4c89;
+    }
+    .github a:hover {
+      color: black;
+    }
+    .lastfm a:hover {
+      color: #dc1a23;
+    }
+    .rdio a:hover {
+      color: #00a9f9;
+    }
+    .pinboard a:hover {
+      color: blue;
+    }
+  }
+}

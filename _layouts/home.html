@@ -1,0 +1,80 @@
+{% include head.html %}
+<body class="front">
+
+  <div role="document">
+    <header role="banner">
+      <!-- <div class="wrapper"> -->
+        <h1>Eric D. Fields <small>Developer, Designer, User Experience Professional</small></h1>
+      <!-- </div> -->
+    </header>
+
+    <nav>
+      <ol>
+        <li><a href="#about">About</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#social">Elsewhere</a></li>
+      </ol>
+    </nav>
+
+    <div role="main">
+      {{ content }}
+      <section id="about">
+        <h2>Bio</h2>
+        {% capture bio %}
+        {% include bio.markdown %}
+        {% endcapture %}
+        {{ bio | unindent | markdownify }}
+      </section>
+      <section id="writing">
+        <h2>Writing</h2>
+        <ol>
+          {% for post in site.posts %}
+            {% if post.status == "published" %}
+            <li{% if page.url == post.url %} class="active"{% endif %}><a href="{{ post.url }}">{% if forloop.index > 5 %}{{ post.title | truncate: 60 }}{% else %}{{ post.title }}{% endif %}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ol>   
+      </section>
+      <section id="design">
+        <h2>Design <small><abbr title="and">&amp;</abbr> Such</small></h2>
+        {% dribbble_set user:ericdfields shots_per_page:12 %}
+      </section>
+      <section id="social">
+        <h2>Meanwhile…</h2>
+        {% include social.html %}
+      </section>
+    </div> <!-- end of [role="main"] -->
+
+<!--     <aside>
+      <section id="pinboard">
+        <h2>Recent Interests</h2>
+        {% pinboard %}
+      </section>
+    </aside> -->
+
+    {% include foot.html %}
+
+
+    asdf
+  </div> <!-- end of [role="document"] -->
+{% include scripts.html %}	        
+<script>
+  (function($){
+    $('img[data-full-size]').each(function(){
+      var $this         = $(this)
+        , dataFullSize  = $this.data('full-size');
+
+      $this.after(
+        $('<img />').attr({
+          src: dataFullSize,
+          class: 'full-size'
+        })
+      );
+    });
+  })(jQuery)
+</script>
+{% include analytics.html %}
+{% include chromeframe.html %}
+</body>
+</html>

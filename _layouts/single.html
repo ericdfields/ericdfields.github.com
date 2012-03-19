@@ -1,0 +1,42 @@
+{% include head.html %}
+<body class="single{% if page.body-class %} {{ page.body-class }}{% endif %}">
+  <nav>
+    <ul>
+      <li>    
+        {% if page.previous.url %} 
+          <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+        {% endif %} 
+      </li>
+      <li>
+        <a href="/">Front Page</a>
+      </li>
+      <li>
+        {% if page.next.url %} 
+          <a href="{{page.next.url}}" title="next Post: {{page.next.title}}">{{page.next.title}} &raquo; </a>
+        {% endif %} 
+      </li>
+    </ul>
+  </nav>
+  <article role="document">
+    <header>
+      <h1>{{ page.title }}</h1>
+      <h2>{{ page.description }}</h2>
+      <div class="byline">
+        <address class="author">by <a rel="author" href="https://plus.google.com/103005925187577969134?rel=author">{{ page.author }}</a></address>
+        {% if page.date %}Published on <time datetime="{{ page.date }}" pubdate>{{ page.date | date: "%B %d, %Y" }}{% if page.last_updated %}, last updated on {{ page.last_updated | date_to_string }}{% endif %}</time>{% endif %}</span> &bull; <a href="{{ page.url }}">permalink</a>
+      </div>
+    </header>  
+    <section role="main">
+      {{ content }}       
+    </section>
+  </article>
+  <section id="social">
+    <h2>Meanwhile…</h2>
+    {% include social.html %}
+  </section>
+  {% include foot.html %}
+{% include scripts.html %}	        
+{% include analytics.html %}
+{% include chromeframe.html %}
+</body>
+</html>
