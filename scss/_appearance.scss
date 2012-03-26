@@ -1,4 +1,4 @@
-header,section,footer {
+header,section,footer,.featured {
   padding: 2.5% 7.5%;
 }
 @include respond-to(desktop) {

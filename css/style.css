@@ -435,7 +435,7 @@ a:hover {
   text-shadow: none;
 }
 
-header, section, footer {
+header, section, footer, .featured {
   padding: 2.5% 7.5%;
 }
 
@@ -768,6 +768,9 @@ nav li a:link, nav li a:visited {
   .front [role="document"] header, .front [role="document"] nav, .front [role="document"] #about {
     padding-left: 9.5%;
   }
+  .front [role="document"] header, .front [role="document"] nav {
+    clear: both;
+  }
   .front [role="document"] #about, .front [role="document"] #writing {
     padding-right: 0;
   }
@@ -786,6 +789,13 @@ nav li a:link, nav li a:visited {
   .front [role="document"] section {
     padding-top: 1em;
   }
+}
+.front .featured {
+  clear: both;
+  text-align: center;
+  padding-bottom: 0;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 #writing li {
@@ -959,7 +969,7 @@ nav li a:link, nav li a:visited {
 }
 @media screen and (min-width: 600px) {
   .single article {
-    margin: 0 auto;
+    margin: 0 auto 5em;
   }
 }
 .single blockquote {
