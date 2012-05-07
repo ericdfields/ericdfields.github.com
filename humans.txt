@@ -3,15 +3,18 @@
 
 
 /* TEAM */
-  Me: Eric D. Fields
-  Site: ericdfields.com
-  Twitter: @ericdfields
-  Location: Boston, MA
+  <your title>: <your name>
+  Site: 
+  Twitter: 
+  Location: 
+
+/* THANKS */
+  Names (& URL): 
 
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
-  Software: Jekyll
+  Software:
   
 
                                     
