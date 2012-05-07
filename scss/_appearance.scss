@@ -1,4 +1,4 @@
-header,section,footer,.featured {
+header,section,footer,.featured,nav {
   padding: 2.5% 7.5%;
 }
 @include respond-to(desktop) {
@@ -10,27 +10,51 @@ header,section,footer,.featured {
 nav {
   text-align: center;
   background: #1c1f35;
-  padding: 1em 0;
   ol,ul {
     @include clearfix;
-    border: solid rgba(#000,.2);
-    border-width: 1px 0;
   }
+  padding-top: .5em;
+  padding-bottom: .5em;
   li {
     text-decoration: none;
-    @include respond-to(desktop) {
-      float: left;
-      font-size: 18px;
-      width: 50%;
-    }
+    float: left;
     a {
       &:link,&:visited {
         color: white;
       }
-      display: block;
+      // display: block;
       line-height: 2;
-      text-align: center;
+      // text-align: center;
       text-decoration: none;
+    }
+    .single & {
+      width: 10%;
+      &:first-child {
+        width: 45%;
+        text-align: left;
+      }
+      &:last-child {
+        width: 45%;
+        text-align: right
+      }
+    }
+    .front & {
+      width: 25%;
+    }
+    span {
+      display: none;
+    }
+    [class^="icon-"] {
+      font-size: 18px;
+      @include transition(125ms);
+      &:hover {
+        @include transform(scale(1.35,1.35));
+      }
+    }
+    @include respond-to(desktop) {
+      float: left;
+      font-size: 18px;
+      width: 50%;
     }
   }
 }

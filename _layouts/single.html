@@ -4,15 +4,15 @@
     <ul>
       <li>    
         {% if page.previous.url %} 
-          <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+          <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i class="icon-arrow-left"></i></a> 
         {% endif %} 
       </li>
       <li>
-        <a href="/">Front Page</a>
+        <a href="/"><i class="icon-home"></i><span>Front Page</span></a>
       </li>
       <li>
         {% if page.next.url %} 
-          <a href="{{page.next.url}}" title="next Post: {{page.next.title}}">{{page.next.title}} &raquo; </a>
+          <a href="{{page.next.url}}" title="next Post: {{page.next.title}}"><i class="icon-arrow-right"></i></a>
         {% endif %} 
       </li>
     </ul>
