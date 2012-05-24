@@ -1,9 +1,4 @@
 .front {
-  h2 {
-    font-weight: bold;
-    font-family: $sans-serif-stack;
-    font-size: 1.5em;
-  }
   nav {
     @include respond-to(tablet) {
       li {
@@ -20,15 +15,15 @@
       @include clearfix;
     }
   }
+  #about {
+    display: none;
+  }
   @include respond-to(desktop) {
     [role="document"] {
       @include clearfix;
       header, nav, section, footer {
         float: left;
         width: 100%;
-      }
-      header, nav, #about {
-        padding-left: 9.5%;
       }
       header,nav {
         clear: both;
@@ -38,19 +33,17 @@
           padding-top: 1em;
         }
       }
-      #about,#writing {
-        padding-right: 0;
-      }
       #about {
-        width: 34%;
-        h3,p {
-          max-width: 94%;
-        }
+        // display: none;
+        // width: 34%;
+        // h3,p {
+        //   max-width: 94%;
+        // }
       }
-      #writing {
-        width: 60%;
-        padding-left: 4%;
-      }
+      // #writing {
+      //   width: 60%;
+      //   padding-left: 4%;
+      // }
     }
   }
   .featured {
@@ -63,33 +56,51 @@
 }
 
 #writing {
+  h2 {
+    small {
+      display: block;
+      font-weight: bold;
+      font-size: .65em;
+      color: #a5bbcc;
+    }
+  }
+  blockquote {
+    margin: 0;
+    line-height: 1.65;
+  }
+  @include respond-to(desktop) {
+    h2 {
+      font-size: 2em;
+    }
+  }
   li {
-    margin-bottom: .55em;
-    line-height: 1.35;
-    @include respond-to(tablet) {
-      font-family: $serif-stack;
-      font-size: 24px;
-      float: left;
-      width: 100%;
-      &:nth-child(5) {
-        margin-bottom: 1.55em;
-      }
-    }
-    &:nth-child(n+6) {
-      font-family: inherit;
-      font-size: inherit;
-      line-height: 1.5;
-      @include respond-to(tablet) {
-        width: 25%;
-        float: left;
-        margin: .45em 0 1.85em;
-        a {
-          display: block;
-          min-height: 5em;
-          width: 80%;
-        }
-      }
-    }
+    margin: 4em 0;
+    // margin-bottom: .55em;
+    // line-height: 1.35;
+    // @include respond-to(tablet) {
+    //   font-family: $serif-stack;
+    //   font-size: 24px;
+    //   float: left;
+    //   width: 100%;
+    //   &:nth-child(5) {
+    //     margin-bottom: 1.55em;
+    //   }
+    // }
+    // &:nth-child(n+6) {
+    //   font-family: inherit;
+    //   font-size: inherit;
+    //   line-height: 1.5;
+    //   @include respond-to(tablet) {
+    //     width: 25%;
+    //     float: left;
+    //     margin: .45em 0 1.85em;
+    //     a {
+    //       display: block;
+    //       min-height: 5em;
+    //       width: 80%;
+    //     }
+    //   }
+    // }
   }
   a {
     text-decoration: none;
@@ -97,6 +108,7 @@
 }
 
 #design {
+  display: none;
   @include background(linear-gradient(#293447 70%,#131424) fixed);
   color: rgba(255,255,255,.75);
   h2 {
@@ -156,28 +168,6 @@
           display: block;
         }
       }
-    }
-  }
-}
-
-#pinboard {
-  font-size: 11px;
-  li {
-    width: 33.33333%;
-    float: left
-  }
-  a {
-    display: block;
-    margin: 4px;
-    background: rgba(0,0,0,.15);
-    height: 7.5em;
-    padding: 8px;
-    text-decoration: none;
-    color: rgba(0,0,0,.75);
-    @include transition(125ms ease-out);
-    &:hover {
-      background: #2b5cd0;
-      color: white;
     }
   }
 }

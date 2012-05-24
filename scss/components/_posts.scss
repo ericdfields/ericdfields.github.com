@@ -1,8 +1,19 @@
 .single { 
   nav {
-    @include respond-to(desktop) {
-      li {
-        width: 33.33333%;
+    margin: 0;
+    padding: 2.5% 7.5%;
+    li {
+      width: 10%;
+      i {
+        font-size: 2em;
+      }
+      &:first-child {
+        width: 45%;
+        text-align: left;
+      }
+      &:last-child {
+        width: 45%;
+        text-align: right
       }
     }
   }
@@ -17,11 +28,12 @@
   }
   article {
     // @extend .clearfix;
-    font-size: 18px;
-    max-width: 600px;
-    @include respond-to(tablet) {
-      margin: 0 auto 5em;
-    }
+    // font-size: 18px;
+    // max-width: 600px;
+    // @include respond-to(tablet) {
+    //   margin: 0 auto 5em;
+    // }
+    
   }
   blockquote {
     margin-left: #{24/$em}em;
@@ -35,10 +47,19 @@
 
   .byline {
     color: rgba(0,0,0,0.45);
-    font-size: 12px;
     line-height: 1.5;
     a {
       color: rgba(0,0,0,0.65);
     }
+    p {
+      margin: 0;
+    }
+    margin: 0 0 2em;
+    @include respond-to(desktop) {
+      margin: 1em 0 4em;
+    }
+    border: rgba(0,0,0,.15) solid;
+    border-width: 0 0 1px;
+    padding: 2em 0;
   }      
 }

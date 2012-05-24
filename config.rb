@@ -16,7 +16,7 @@ javascripts_dir = "js"
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
 
-line_comments = false
+# line_comments = false
 
 
 # If you prefer the indented syntax, you might want to regenerate this

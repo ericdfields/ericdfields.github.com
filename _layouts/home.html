@@ -4,18 +4,18 @@
   <div role="document">
     <header role="banner">
       <!-- <div class="wrapper"> -->
-        <h1>Eric D. Fields <small>Developer, Designer, User Experience Professional</small></h1>
+        <h1>Eric D. Fields <small>Developer + Designer</small></h1>
       <!-- </div> -->
     </header>
 
-    <nav>
+<!--     <nav>
       <ol>
         <li><a href="#about">About</a></li>
         <li><a href="#writing">Writing</a></li>
         <li><a href="#design">Design</a></li>
         <li><a href="#social">Elsewhere</a></li>
       </ol>
-    </nav>
+    </nav> -->
 
     <div role="main">
       {{ content }}
@@ -27,11 +27,18 @@
         {{ bio | unindent | markdownify }}
       </section>
       <section id="writing">
-        <h2>Writing</h2>
         <ol>
           {% for post in site.posts %}
             {% if post.status == "published" %}
-            <li{% if page.url == post.url %} class="active"{% endif %}><a href="{{ post.url }}">{% if forloop.index > 5 %}{{ post.title | truncate: 60 }}{% else %}{{ post.title }}{% endif %}</a></li>
+            <li{% if page.url == post.url %} class="active"{% endif %}>
+              <h2>
+                <small>{{ post.date | date: "%B %d, %Y" }}</small>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </h2>
+              <blockquote>
+                <p>{{ post.content | truncatehtml : 240 | strip_html }}</p>
+              </blockquote>
+            </li>
             {% endif %}
           {% endfor %}
         </ol>   
@@ -40,22 +47,15 @@
         <h2>Design <small><abbr title="and">&amp;</abbr> Such</small></h2>
         {% dribbble_set user:ericdfields shots_per_page:12 %}
       </section>
-      <section id="social">
-        <h2>Meanwhile…</h2>
-        {% include social.html %}
-      </section>
     </div> <!-- end of [role="main"] -->
 
-<!--     <aside>
-      <section id="pinboard">
-        <h2>Recent Interests</h2>
-        {% pinboard %}
-      </section>
-    </aside> -->
-
-    {% include foot.html %}
-
   </div> <!-- end of [role="document"] -->
+
+  <section id="social">
+    <h2>Meanwhile…</h2>
+    {% include social.html %}
+    {% include foot.html %}
+  </section>
 {% include scripts.html %}	        
 <script>
   (function($){

@@ -9,10 +9,14 @@
 
 #social {
   @include background(linear-gradient(#fff,#e6e6e6));
-  border: solid rgba(0,0,0,.2);
-  border-width: 1px 0;
+  // border: solid rgba(0,0,0,.2);
+  // border-width: 1px 0;
+  margin: 0;
+  padding: 2.5% 7.5%;
+  padding-bottom: 15%;
   h2 {
     text-align: center;
+    margin-bottom: 1em;
   }
   .fontface & {
     ul {
@@ -38,7 +42,7 @@
       text-shadow: rgba(255,255,255,1) 0 2px 0;
       @include transition(125ms ease-in);
       text-align: center;
-      font-size: 48px;
+      font-size: 2.5em;
       font-family: zocial;
       color: rgba(0,0,0,.35);
       &:hover {
@@ -69,5 +73,8 @@
     .pinboard a:hover {
       color: blue;
     }
+  }
+  @include respond-to(desktop) {
+    font-size: 2em;
   }
 }

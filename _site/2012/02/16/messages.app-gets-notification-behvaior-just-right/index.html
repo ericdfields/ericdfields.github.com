@@ -1,0 +1,143 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Messages.app Gets Cross-Device Notifications Just Right</title>
+  <meta name="description" content="Apple cleverly solves the scenario of three devices participating in the same conversation at once.">
+  <meta name="author" content="Eric D. Fields">
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="alternate" type="application/rss+xml" title="Feed for ericdfields.com" href="http://feeds.feedburner.com/ericdfields/jvRB">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media="all" -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- More ideas for your <head> here: h5bp.com/docs/#head-Tips -->
+
+  <!-- All JavaScript at the bottom, except for Modernizr and Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="/js/libs/modernizr-2.0.min.js"></script>
+  <script src="/js/libs/respond.min.js"></script>
+</head>
+<body class="single">
+  <nav>
+    <ul>
+      <li>    
+         
+          <a href="/2012/02/15/above-the-fold-in-2012/" title="Previous Post: Above the Fold in 2012"><i class="icon-arrow-left"></i></a> 
+         
+      </li>
+      <li>
+        <a href="/"><i class="icon-home"></i><span>Front Page</span></a>
+      </li>
+      <li>
+         
+          <a href="/2012/02/29/bless-this-css-mess-in-compass/" title="next Post: Bless this CSS Mess with Compass"><i class="icon-arrow-right"></i></a>
+         
+      </li>
+    </ul>
+  </nav>
+  <article role="document">
+    <header>
+      <h1>Messages.app Gets Cross-Device Notifications Just Right</h1>
+      <h2>Apple cleverly solves the scenario of three devices participating in the same conversation at once.</h2>
+      <div class="byline">
+        <address class="author"><p>by <a rel="author" href="https://plus.google.com/103005925187577969134?rel=author">Eric D. Fields</a></p></address>
+        <p>Published on <time datetime="2012-02-16 14:02:59 -0500" pubdate>February 16, 2012</time></span> &bull; <a href="/2012/02/16/messages.app-gets-notification-behvaior-just-right/">permalink</a></p>
+      </div>
+    </header>  
+    <section role="main">
+      <p>Word of OS X 10.8 (kitty code name: <a href="http://www.apple.com/macosx/mountain-lion/">Mountain Lion</a>) dropped today. The big summary is its a continuation of the iCloud-ification of your data across all devices.</p>
+
+<p>Part of the announcement was a <a href="http://www.apple.com/macosx/mountain-lion/messages-beta/">beta release of Messages.app</a>, formerly known as iChat. Now your iMessage conversation history syncs between your OS X machine(s) and iOS devices seamlessly.</p>
+
+<p>A quick test with a friend and it works as expected. "Holla" jumps up in the conversation on the iPhone, iPad and Air almost simultaneously.</p>
+
+<p>So we started using it while working on our OS X machines. Then the iOS devices went to sleep. Then things got interesting.</p>
+
+<p>With a conversation happening on one device but being synced across many, knowing which device is having the conversation is key to the user experience. Apple figured this out <em>so</em> well that I just had to jubulate in its subtlty with this post.</p>
+
+<p>When typing in Messages.app, iCloud knows your in Messages.app. When typing on the iPad, iCloud knows your on the iPad. <strong>When you're engaged in a conversation on one device, the other devices do not get notified of new messages.</strong> This avoids cross-device notification flares currently experienced by calendar alerts, which makes for an especially noisey 9:55 AM for me.</p>
+
+<p>Now say you're working, working, working and Messages.app is out of focus. <strong>At this point, iCloud doesn't know what you're up to</strong>. A new message comes in. Since iCloud doesn't know what you've done since the conversation stopped it notifies all your devices.</p>
+
+<p>You're still in OS X so you reply to the message via Messages.app. Now you've got notifications to dismiss on your iOS devices, right? Total first-world bummer, right? Nope: <strong>iCloud dismisses the notifications across devices once the conversation picks up again.</strong></p>
+
+<p>No extra X-ing out of things. No burnt seconds of your life. Just gets rid of them because it knows you've started talking again.</p>
+
+<p>This is a total win. Anyone who's had an IM client open on an iOS device while signed in on the desktop knows that the scenario of multiple notifications about the same thing at the same is annoying to the point of untenable. Power users might deal with it for its synchronous novelty, but real users won't.</p>
+
+<p>I imagine the entire minagerie of Notification Center-enabled OS X apps will work this way. Maybe it already works this way on iOS and I just never noticed it (I'm stingy with what I allow in my Notification Center).</p>
+
+<p>Maybe I'll finally stop being reminded of our daily scrum by three screens at the same time every morning.</p>
+       
+    </section>
+  </article>
+  <section id="social">
+    <h2>Meanwhile…</h2>
+    <ul>                                                                
+  <li class="twitter"><a title="@ericdfields on Twitter" href="http://twitter.com/ericdfields"><b>T</b><span>witter</span></a></li>
+
+  <li class="linkedin"><a href="http://www.linkedin.com/in/ericdfields"><b>L</b><span>inkedIn</span></a></li>
+
+  <li class="dribbble"><a href="http://dribbble.com/ericdfields"><b>D</b><span>ribbble</span></a></li>
+
+  <li class="github"><a href="http://github.com/ericdfields"><b>g</b><span>ithub</span></a></li>
+
+  <li class="pinboard"><a href="http://pinboard.in/u:ericdfields"><span>Pi</span><b>n</b><span>board</span></a></li>
+
+  <li class="lastfm"><a href="http://last.fm/user/ericdfields"><b>l</b><span>ast.fm</span></a></li>
+
+  <li class="rdio"><a href="http://rdio.com/people/ericdfields"><b>r</b><span>dio</span></a></li>
+</ul>
+    <footer role="footer">
+	&copy; 2012 Eric D. Fields <em>Last updated May 24, 2012</em>
+</footer>
+  </section>
+<!-- JavaScript at the bottom for fast page loading -->
+
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+
+<!-- scripts concatenated and minified via ant build script-->
+<!-- <script src="/js/plugins.js"></script> -->
+<script src="/js/script.js"></script>
+<!-- end scripts-->	        
+<!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5436090-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+     chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7 ]>
+  <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+  <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+</body>
+</html>
