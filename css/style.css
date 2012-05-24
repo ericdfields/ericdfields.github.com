@@ -9,10 +9,12 @@
 /* =============================================================================
    HTML5 element display
    ========================================================================== */
+/* line 14, ../scss/helpers/_h5bp_reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block;
 }
 
+/* line 15, ../scss/helpers/_h5bp_reset.scss */
 audio[controls], canvas, video {
   display: inline-block;
   *display: inline;
@@ -31,6 +33,7 @@ audio[controls], canvas, video {
  * 4. Prevent iOS text size adjust on device orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
+/* line 32, ../scss/helpers/_h5bp_reset.scss */
 html {
   font-size: 100%;
   overflow-y: scroll;
@@ -39,12 +42,14 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
+/* line 34, ../scss/helpers/_h5bp_reset.scss */
 body {
   margin: 0;
   font-size: 13px;
   line-height: 1.231;
 }
 
+/* line 36, ../scss/helpers/_h5bp_reset.scss */
 body, button, input, select, textarea {
   font-family: sans-serif;
   color: #222;
@@ -55,12 +60,14 @@ body, button, input, select, textarea {
  * No text-shadow: twitter.com/miketaylr/status/12228805301
  * Also: hot pink!
  */
+/* line 44, ../scss/helpers/_h5bp_reset.scss */
 ::-moz-selection {
   background: #fe57a1;
   color: #fff;
   text-shadow: none;
 }
 
+/* line 45, ../scss/helpers/_h5bp_reset.scss */
 ::selection {
   background: #fe57a1;
   color: #fff;
@@ -70,19 +77,23 @@ body, button, input, select, textarea {
 /* =============================================================================
    Links
    ========================================================================== */
+/* line 52, ../scss/helpers/_h5bp_reset.scss */
 a {
   color: #00e;
 }
 
+/* line 53, ../scss/helpers/_h5bp_reset.scss */
 a:visited {
   color: #551a8b;
 }
 
+/* line 54, ../scss/helpers/_h5bp_reset.scss */
 a:focus {
   outline: thin dotted;
 }
 
 /* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */
+/* line 57, ../scss/helpers/_h5bp_reset.scss */
 a:hover, a:active {
   outline: 0;
 }
@@ -90,22 +101,27 @@ a:hover, a:active {
 /* =============================================================================
    Typography
    ========================================================================== */
+/* line 64, ../scss/helpers/_h5bp_reset.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
+/* line 66, ../scss/helpers/_h5bp_reset.scss */
 b, strong {
   font-weight: bold;
 }
 
+/* line 68, ../scss/helpers/_h5bp_reset.scss */
 blockquote {
   margin: 1em 40px;
 }
 
+/* line 70, ../scss/helpers/_h5bp_reset.scss */
 dfn {
   font-style: italic;
 }
 
+/* line 72, ../scss/helpers/_h5bp_reset.scss */
 hr {
   display: block;
   height: 1px;
@@ -115,12 +131,14 @@ hr {
   padding: 0;
 }
 
+/* line 74, ../scss/helpers/_h5bp_reset.scss */
 ins {
   background: #ff9;
   color: #000;
   text-decoration: none;
 }
 
+/* line 76, ../scss/helpers/_h5bp_reset.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -129,6 +147,7 @@ mark {
 }
 
 /* Redeclare monospace font family: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
+/* line 79, ../scss/helpers/_h5bp_reset.scss */
 pre, code, kbd, samp {
   font-family: monospace, monospace;
   _font-family: 'courier new', monospace;
@@ -136,26 +155,31 @@ pre, code, kbd, samp {
 }
 
 /* Improve readability of pre-formatted text in all browsers */
+/* line 82, ../scss/helpers/_h5bp_reset.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
+/* line 84, ../scss/helpers/_h5bp_reset.scss */
 q {
   quotes: none;
 }
 
+/* line 85, ../scss/helpers/_h5bp_reset.scss */
 q:before, q:after {
   content: "";
   content: none;
 }
 
+/* line 87, ../scss/helpers/_h5bp_reset.scss */
 small {
   font-size: 85%;
 }
 
 /* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
+/* line 90, ../scss/helpers/_h5bp_reset.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -163,10 +187,12 @@ sub, sup {
   vertical-align: baseline;
 }
 
+/* line 91, ../scss/helpers/_h5bp_reset.scss */
 sup {
   top: -0.5em;
 }
 
+/* line 92, ../scss/helpers/_h5bp_reset.scss */
 sub {
   bottom: -0.25em;
 }
@@ -174,15 +200,18 @@ sub {
 /* =============================================================================
    Lists
    ========================================================================== */
+/* line 99, ../scss/helpers/_h5bp_reset.scss */
 ul, ol {
   margin: 1em 0;
   padding: 0 0 0 40px;
 }
 
+/* line 100, ../scss/helpers/_h5bp_reset.scss */
 dd {
   margin: 0 0 0 40px;
 }
 
+/* line 101, ../scss/helpers/_h5bp_reset.scss */
 nav ul, nav ol {
   list-style: none;
   margin: 0;
@@ -196,6 +225,7 @@ nav ul, nav ol {
  * 1. Improve image quality when scaled in IE7 http://h5bp.com/d
  * 2. Remove the gap between images and borders on image containers http://h5bp.com/e 
  */
+/* line 113, ../scss/helpers/_h5bp_reset.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -205,6 +235,7 @@ img {
 /*
  * Correct overflow displayed oddly in IE9 
  */
+/* line 119, ../scss/helpers/_h5bp_reset.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -212,6 +243,7 @@ svg:not(:root) {
 /* =============================================================================
    Figures
    ========================================================================== */
+/* line 126, ../scss/helpers/_h5bp_reset.scss */
 figure {
   margin: 0;
 }
@@ -219,10 +251,12 @@ figure {
 /* =============================================================================
    Forms
    ========================================================================== */
+/* line 133, ../scss/helpers/_h5bp_reset.scss */
 form {
   margin: 0;
 }
 
+/* line 134, ../scss/helpers/_h5bp_reset.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -233,6 +267,7 @@ fieldset {
  * 1. Correct color not inheriting in IE6/7/8/9 
  * 2. Correct alignment displayed oddly in IE6/7 
  */
+/* line 141, ../scss/helpers/_h5bp_reset.scss */
 legend {
   border: 0;
   *margin-left: -7px;
@@ -240,6 +275,7 @@ legend {
 }
 
 /* Indicate that 'label' will shift focus to the associated form element */
+/* line 144, ../scss/helpers/_h5bp_reset.scss */
 label {
   cursor: pointer;
 }
@@ -249,6 +285,7 @@ label {
  * 2. Remove margins in FF3/4 S5 Chrome
  * 3. Define consistent vertical alignment display in all browsers
  */
+/* line 152, ../scss/helpers/_h5bp_reset.scss */
 button, input, select, textarea {
   font-size: 100%;
   margin: 0;
@@ -260,6 +297,7 @@ button, input, select, textarea {
  * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
  * 2. Correct inner spacing displayed oddly in IE6/7
  */
+/* line 159, ../scss/helpers/_h5bp_reset.scss */
 button, input {
   line-height: normal;
   *overflow: visible;
@@ -269,6 +307,7 @@ button, input {
  * 1. Display hand cursor for clickable form elements
  * 2. Allow styling of clickable form elements in iOS
  */
+/* line 166, ../scss/helpers/_h5bp_reset.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
@@ -277,10 +316,12 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 /*
  * Consistent box sizing and appearance
  */
+/* line 172, ../scss/helpers/_h5bp_reset.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
 }
 
+/* line 173, ../scss/helpers/_h5bp_reset.scss */
 input[type="search"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
@@ -291,18 +332,21 @@ input[type="search"] {
  * Remove inner padding and border in FF3/4
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ 
  */
+/* line 180, ../scss/helpers/_h5bp_reset.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
 /* Remove default vertical scrollbar in IE6/7/8/9 */
+/* line 183, ../scss/helpers/_h5bp_reset.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
 /* Colors for form validity */
+/* line 187, ../scss/helpers/_h5bp_reset.scss */
 input:invalid, textarea:invalid {
   background-color: #f0dddd;
 }
@@ -310,11 +354,13 @@ input:invalid, textarea:invalid {
 /* =============================================================================
    Tables
    ========================================================================== */
+/* line 194, ../scss/helpers/_h5bp_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* line 1, ../scss/helpers/_reset.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -326,18 +372,21 @@ table {
    Please define your styles before this section.
    ========================================================================== */
 /* For image replacement */
+/* line 7, ../scss/helpers/_non-semantic-helpers.scss */
 .ir {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
 }
 
+/* line 8, ../scss/helpers/_non-semantic-helpers.scss */
 .ir br {
   display: none;
 }
 
 /* Hide for both screenreaders and browsers:
    css-discuss.incutio.com/wiki/Screenreader_Visibility */
+/* line 12, ../scss/helpers/_non-semantic-helpers.scss */
 .hidden {
   display: none;
   visibility: hidden;
@@ -345,6 +394,7 @@ table {
 
 /* Hide only visually, but have it available for screenreaders: by Jon Neal.
   www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+/* line 16, ../scss/helpers/_non-semantic-helpers.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -357,6 +407,7 @@ table {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+/* line 19, ../scss/helpers/_non-semantic-helpers.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -367,20 +418,24 @@ table {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
+/* line 22, ../scss/helpers/_non-semantic-helpers.scss */
 .invisible {
   visibility: hidden;
 }
 
 /* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 25, ../scss/helpers/_non-semantic-helpers.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
+/* line 26, ../scss/helpers/_non-semantic-helpers.scss */
 .clearfix:after {
   clear: both;
 }
 
+/* line 27, ../scss/helpers/_non-semantic-helpers.scss */
 .clearfix {
   zoom: 1;
 }
@@ -414,6 +469,7 @@ table {
   font-style: normal;
 }
 
+/* line 29, ../scss/lib/_font-awesome.sass */
 [class^="icon-"],
 [class*=" icon-"] {
   display: inline;
@@ -426,6 +482,7 @@ table {
   background-repeat: repeat;
 }
 
+/* line 40, ../scss/lib/_font-awesome.sass */
 li[class^="icon-"],
 li[class*=" icon-"] {
   display: block;
@@ -433,6 +490,7 @@ li[class*=" icon-"] {
 
 /*  Font Awesome styles
  *  ------------------------------------------------------- */
+/* line 47, ../scss/lib/_font-awesome.sass */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: FontAwesome;
@@ -442,44 +500,52 @@ li[class*=" icon-"] {
   text-decoration: inherit;
 }
 
+/* line 55, ../scss/lib/_font-awesome.sass */
 a [class^="icon-"],
 a [class*=" icon-"] {
   display: inline-block;
   text-decoration: inherit;
 }
 
+/* line 61, ../scss/lib/_font-awesome.sass */
 .icon-large:before {
   vertical-align: top;
   font-size: 4/3em;
 }
 
+/* line 66, ../scss/lib/_font-awesome.sass */
 .btn [class^="icon-"],
 .btn [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
   line-height: 0.9em;
 }
 
+/* line 72, ../scss/lib/_font-awesome.sass */
 li [class^="icon-"],
 li [class*=" icon-"] {
   display: inline-block;
   width: 1.25em;
   text-align: center;
 }
+/* line 77, ../scss/lib/_font-awesome.sass */
 li .icon-large[class^="icon-"],
 li .icon-large[class*=" icon-"] {
   width: 1.875em;
 }
 
+/* line 82, ../scss/lib/_font-awesome.sass */
 li[class^="icon-"],
 li[class*=" icon-"] {
   margin-left: 0;
   list-style-type: none;
 }
+/* line 86, ../scss/lib/_font-awesome.sass */
 li[class^="icon-"]:before,
 li[class*=" icon-"]:before {
   text-indent: -2em;
   text-align: center;
 }
+/* line 89, ../scss/lib/_font-awesome.sass */
 li[class^="icon-"].icon-large:before,
 li[class*=" icon-"].icon-large:before {
   text-indent: -4/3em;
@@ -487,591 +553,788 @@ li[class*=" icon-"].icon-large:before {
 
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
  *  readers do not read off random characters that represent icons */
+/* line 94, ../scss/lib/_font-awesome.sass */
 .icon-glass:before {
   content: "\f000";
 }
 
+/* line 97, ../scss/lib/_font-awesome.sass */
 .icon-music:before {
   content: "\f001";
 }
 
+/* line 100, ../scss/lib/_font-awesome.sass */
 .icon-search:before {
   content: "\f002";
 }
 
+/* line 103, ../scss/lib/_font-awesome.sass */
 .icon-envelope:before {
   content: "\f003";
 }
 
+/* line 106, ../scss/lib/_font-awesome.sass */
 .icon-heart:before {
   content: "\f004";
 }
 
+/* line 109, ../scss/lib/_font-awesome.sass */
 .icon-star:before {
   content: "\f005";
 }
 
+/* line 112, ../scss/lib/_font-awesome.sass */
 .icon-star-empty:before {
   content: "\f006";
 }
 
+/* line 115, ../scss/lib/_font-awesome.sass */
 .icon-user:before {
   content: "\f007";
 }
 
+/* line 118, ../scss/lib/_font-awesome.sass */
 .icon-film:before {
   content: "\f008";
 }
 
+/* line 121, ../scss/lib/_font-awesome.sass */
 .icon-th-large:before {
   content: "\f009";
 }
 
+/* line 124, ../scss/lib/_font-awesome.sass */
 .icon-th:before {
   content: "\f00a";
 }
 
+/* line 127, ../scss/lib/_font-awesome.sass */
 .icon-th-list:before {
   content: "\f00b";
 }
 
+/* line 130, ../scss/lib/_font-awesome.sass */
 .icon-ok:before {
   content: "\f00c";
 }
 
+/* line 133, ../scss/lib/_font-awesome.sass */
 .icon-remove:before {
   content: "\f00d";
 }
 
+/* line 136, ../scss/lib/_font-awesome.sass */
 .icon-zoom-in:before {
   content: "\f00e";
 }
 
+/* line 139, ../scss/lib/_font-awesome.sass */
 .icon-zoom-out:before {
   content: "\f010";
 }
 
+/* line 142, ../scss/lib/_font-awesome.sass */
 .icon-off:before {
   content: "\f011";
 }
 
+/* line 145, ../scss/lib/_font-awesome.sass */
 .icon-signal:before {
   content: "\f012";
 }
 
+/* line 148, ../scss/lib/_font-awesome.sass */
 .icon-cog:before {
   content: "\f013";
 }
 
+/* line 151, ../scss/lib/_font-awesome.sass */
 .icon-trash:before {
   content: "\f014";
 }
 
+/* line 154, ../scss/lib/_font-awesome.sass */
 .icon-home:before {
   content: "\f015";
 }
 
+/* line 157, ../scss/lib/_font-awesome.sass */
 .icon-file:before {
   content: "\f016";
 }
 
+/* line 160, ../scss/lib/_font-awesome.sass */
 .icon-time:before {
   content: "\f017";
 }
 
+/* line 163, ../scss/lib/_font-awesome.sass */
 .icon-road:before {
   content: "\f018";
 }
 
+/* line 166, ../scss/lib/_font-awesome.sass */
 .icon-download-alt:before {
   content: "\f019";
 }
 
+/* line 169, ../scss/lib/_font-awesome.sass */
 .icon-download:before {
   content: "\f01a";
 }
 
+/* line 172, ../scss/lib/_font-awesome.sass */
 .icon-upload:before {
   content: "\f01b";
 }
 
+/* line 175, ../scss/lib/_font-awesome.sass */
 .icon-inbox:before {
   content: "\f01c";
 }
 
+/* line 178, ../scss/lib/_font-awesome.sass */
 .icon-play-circle:before {
   content: "\f01d";
 }
 
+/* line 181, ../scss/lib/_font-awesome.sass */
 .icon-repeat:before {
   content: "\f01e";
 }
 
 /* \f020 is not a valid unicode character. all shifted one down */
+/* line 185, ../scss/lib/_font-awesome.sass */
 .icon-refresh:before {
   content: "\f021";
 }
 
+/* line 188, ../scss/lib/_font-awesome.sass */
 .icon-list-alt:before {
   content: "\f022";
 }
 
+/* line 191, ../scss/lib/_font-awesome.sass */
 .icon-lock:before {
   content: "\f023";
 }
 
+/* line 194, ../scss/lib/_font-awesome.sass */
 .icon-flag:before {
   content: "\f024";
 }
 
+/* line 197, ../scss/lib/_font-awesome.sass */
 .icon-headphones:before {
   content: "\f025";
 }
 
+/* line 200, ../scss/lib/_font-awesome.sass */
 .icon-volume-off:before {
   content: "\f026";
 }
 
+/* line 203, ../scss/lib/_font-awesome.sass */
 .icon-volume-down:before {
   content: "\f027";
 }
 
+/* line 206, ../scss/lib/_font-awesome.sass */
 .icon-volume-up:before {
   content: "\f028";
 }
 
+/* line 209, ../scss/lib/_font-awesome.sass */
 .icon-qrcode:before {
   content: "\f029";
 }
 
+/* line 212, ../scss/lib/_font-awesome.sass */
 .icon-barcode:before {
   content: "\f02a";
 }
 
+/* line 215, ../scss/lib/_font-awesome.sass */
 .icon-tag:before {
   content: "\f02b";
 }
 
+/* line 218, ../scss/lib/_font-awesome.sass */
 .icon-tags:before {
   content: "\f02c";
 }
 
+/* line 221, ../scss/lib/_font-awesome.sass */
 .icon-book:before {
   content: "\f02d";
 }
 
+/* line 224, ../scss/lib/_font-awesome.sass */
 .icon-bookmark:before {
   content: "\f02e";
 }
 
+/* line 227, ../scss/lib/_font-awesome.sass */
 .icon-print:before {
   content: "\f02f";
 }
 
+/* line 230, ../scss/lib/_font-awesome.sass */
 .icon-camera:before {
   content: "\f030";
 }
 
+/* line 233, ../scss/lib/_font-awesome.sass */
 .icon-font:before {
   content: "\f031";
 }
 
+/* line 236, ../scss/lib/_font-awesome.sass */
 .icon-bold:before {
   content: "\f032";
 }
 
+/* line 239, ../scss/lib/_font-awesome.sass */
 .icon-italic:before {
   content: "\f033";
 }
 
+/* line 242, ../scss/lib/_font-awesome.sass */
 .icon-text-height:before {
   content: "\f034";
 }
 
+/* line 245, ../scss/lib/_font-awesome.sass */
 .icon-text-width:before {
   content: "\f035";
 }
 
+/* line 248, ../scss/lib/_font-awesome.sass */
 .icon-align-left:before {
   content: "\f036";
 }
 
+/* line 251, ../scss/lib/_font-awesome.sass */
 .icon-align-center:before {
   content: "\f037";
 }
 
+/* line 254, ../scss/lib/_font-awesome.sass */
 .icon-align-right:before {
   content: "\f038";
 }
 
+/* line 257, ../scss/lib/_font-awesome.sass */
 .icon-align-justify:before {
   content: "\f039";
 }
 
+/* line 260, ../scss/lib/_font-awesome.sass */
 .icon-list:before {
   content: "\f03a";
 }
 
+/* line 263, ../scss/lib/_font-awesome.sass */
 .icon-indent-left:before {
   content: "\f03b";
 }
 
+/* line 266, ../scss/lib/_font-awesome.sass */
 .icon-indent-right:before {
   content: "\f03c";
 }
 
+/* line 269, ../scss/lib/_font-awesome.sass */
 .icon-facetime-video:before {
   content: "\f03d";
 }
 
+/* line 272, ../scss/lib/_font-awesome.sass */
 .icon-picture:before {
   content: "\f03e";
 }
 
+/* line 275, ../scss/lib/_font-awesome.sass */
 .icon-pencil:before {
   content: "\f040";
 }
 
+/* line 278, ../scss/lib/_font-awesome.sass */
 .icon-map-marker:before {
   content: "\f041";
 }
 
+/* line 281, ../scss/lib/_font-awesome.sass */
 .icon-adjust:before {
   content: "\f042";
 }
 
+/* line 284, ../scss/lib/_font-awesome.sass */
 .icon-tint:before {
   content: "\f043";
 }
 
+/* line 287, ../scss/lib/_font-awesome.sass */
 .icon-edit:before {
   content: "\f044";
 }
 
+/* line 290, ../scss/lib/_font-awesome.sass */
 .icon-share:before {
   content: "\f045";
 }
 
+/* line 293, ../scss/lib/_font-awesome.sass */
 .icon-check:before {
   content: "\f046";
 }
 
+/* line 296, ../scss/lib/_font-awesome.sass */
 .icon-move:before {
   content: "\f047";
 }
 
+/* line 299, ../scss/lib/_font-awesome.sass */
 .icon-step-backward:before {
   content: "\f048";
 }
 
+/* line 302, ../scss/lib/_font-awesome.sass */
 .icon-fast-backward:before {
   content: "\f049";
 }
 
+/* line 305, ../scss/lib/_font-awesome.sass */
 .icon-backward:before {
   content: "\f04a";
 }
 
+/* line 308, ../scss/lib/_font-awesome.sass */
 .icon-play:before {
   content: "\f04b";
 }
 
+/* line 311, ../scss/lib/_font-awesome.sass */
 .icon-pause:before {
   content: "\f04c";
 }
 
+/* line 314, ../scss/lib/_font-awesome.sass */
 .icon-stop:before {
   content: "\f04d";
 }
 
+/* line 317, ../scss/lib/_font-awesome.sass */
 .icon-forward:before {
   content: "\f04e";
 }
 
+/* line 320, ../scss/lib/_font-awesome.sass */
 .icon-fast-forward:before {
   content: "\f050";
 }
 
+/* line 323, ../scss/lib/_font-awesome.sass */
 .icon-step-forward:before {
   content: "\f051";
 }
 
+/* line 326, ../scss/lib/_font-awesome.sass */
 .icon-eject:before {
   content: "\f052";
 }
 
+/* line 329, ../scss/lib/_font-awesome.sass */
 .icon-chevron-left:before {
   content: "\f053";
 }
 
+/* line 332, ../scss/lib/_font-awesome.sass */
 .icon-chevron-right:before {
   content: "\f054";
 }
 
+/* line 335, ../scss/lib/_font-awesome.sass */
 .icon-plus-sign:before {
   content: "\f055";
 }
 
+/* line 338, ../scss/lib/_font-awesome.sass */
 .icon-minus-sign:before {
   content: "\f056";
 }
 
+/* line 341, ../scss/lib/_font-awesome.sass */
 .icon-remove-sign:before {
   content: "\f057";
 }
 
+/* line 344, ../scss/lib/_font-awesome.sass */
 .icon-ok-sign:before {
   content: "\f058";
 }
 
+/* line 347, ../scss/lib/_font-awesome.sass */
 .icon-question-sign:before {
   content: "\f059";
 }
 
+/* line 350, ../scss/lib/_font-awesome.sass */
 .icon-info-sign:before {
   content: "\f05a";
 }
 
+/* line 353, ../scss/lib/_font-awesome.sass */
 .icon-screenshot:before {
   content: "\f05b";
 }
 
+/* line 356, ../scss/lib/_font-awesome.sass */
 .icon-remove-circle:before {
   content: "\f05c";
 }
 
+/* line 359, ../scss/lib/_font-awesome.sass */
 .icon-ok-circle:before {
   content: "\f05d";
 }
 
+/* line 362, ../scss/lib/_font-awesome.sass */
 .icon-ban-circle:before {
   content: "\f05e";
 }
 
+/* line 365, ../scss/lib/_font-awesome.sass */
 .icon-arrow-left:before {
   content: "\f060";
 }
 
+/* line 368, ../scss/lib/_font-awesome.sass */
 .icon-arrow-right:before {
   content: "\f061";
 }
 
+/* line 371, ../scss/lib/_font-awesome.sass */
 .icon-arrow-up:before {
   content: "\f062";
 }
 
+/* line 374, ../scss/lib/_font-awesome.sass */
 .icon-arrow-down:before {
   content: "\f063";
 }
 
+/* line 377, ../scss/lib/_font-awesome.sass */
 .icon-share-alt:before {
   content: "\f064";
 }
 
+/* line 380, ../scss/lib/_font-awesome.sass */
 .icon-resize-full:before {
   content: "\f065";
 }
 
+/* line 383, ../scss/lib/_font-awesome.sass */
 .icon-resize-small:before {
   content: "\f066";
 }
 
+/* line 386, ../scss/lib/_font-awesome.sass */
 .icon-plus:before {
   content: "\f067";
 }
 
+/* line 389, ../scss/lib/_font-awesome.sass */
 .icon-minus:before {
   content: "\f068";
 }
 
+/* line 392, ../scss/lib/_font-awesome.sass */
 .icon-asterisk:before {
   content: "\f069";
 }
 
+/* line 395, ../scss/lib/_font-awesome.sass */
 .icon-exclamation-sign:before {
   content: "\f06a";
 }
 
+/* line 398, ../scss/lib/_font-awesome.sass */
 .icon-gift:before {
   content: "\f06b";
 }
 
+/* line 401, ../scss/lib/_font-awesome.sass */
 .icon-leaf:before {
   content: "\f06c";
 }
 
+/* line 404, ../scss/lib/_font-awesome.sass */
 .icon-fire:before {
   content: "\f06d";
 }
 
+/* line 407, ../scss/lib/_font-awesome.sass */
 .icon-eye-open:before {
   content: "\f06e";
 }
 
+/* line 410, ../scss/lib/_font-awesome.sass */
 .icon-eye-close:before {
   content: "\f070";
 }
 
+/* line 413, ../scss/lib/_font-awesome.sass */
 .icon-warning-sign:before {
   content: "\f071";
 }
 
+/* line 416, ../scss/lib/_font-awesome.sass */
 .icon-plane:before {
   content: "\f072";
 }
 
+/* line 419, ../scss/lib/_font-awesome.sass */
 .icon-calendar:before {
   content: "\f073";
 }
 
+/* line 422, ../scss/lib/_font-awesome.sass */
 .icon-random:before {
   content: "\f074";
 }
 
+/* line 425, ../scss/lib/_font-awesome.sass */
 .icon-comment:before {
   content: "\f075";
 }
 
+/* line 428, ../scss/lib/_font-awesome.sass */
 .icon-magnet:before {
   content: "\f076";
 }
 
+/* line 431, ../scss/lib/_font-awesome.sass */
 .icon-chevron-up:before {
   content: "\f077";
 }
 
+/* line 434, ../scss/lib/_font-awesome.sass */
 .icon-chevron-down:before {
   content: "\f078";
 }
 
+/* line 437, ../scss/lib/_font-awesome.sass */
 .icon-retweet:before {
   content: "\f079";
 }
 
+/* line 440, ../scss/lib/_font-awesome.sass */
 .icon-shopping-cart:before {
   content: "\f07a";
 }
 
+/* line 443, ../scss/lib/_font-awesome.sass */
 .icon-folder-close:before {
   content: "\f07b";
 }
 
+/* line 446, ../scss/lib/_font-awesome.sass */
 .icon-folder-open:before {
   content: "\f07c";
 }
 
+/* line 449, ../scss/lib/_font-awesome.sass */
 .icon-resize-vertical:before {
   content: "\f07d";
 }
 
+/* line 452, ../scss/lib/_font-awesome.sass */
 .icon-resize-horizontal:before {
   content: "\f07e";
 }
 
+/* line 455, ../scss/lib/_font-awesome.sass */
 .icon-bar-chart:before {
   content: "\f080";
 }
 
+/* line 458, ../scss/lib/_font-awesome.sass */
 .icon-twitter-sign:before {
   content: "\f081";
 }
 
+/* line 461, ../scss/lib/_font-awesome.sass */
 .icon-facebook-sign:before {
   content: "\f082";
 }
 
+/* line 464, ../scss/lib/_font-awesome.sass */
 .icon-camera-retro:before {
   content: "\f083";
 }
 
+/* line 467, ../scss/lib/_font-awesome.sass */
 .icon-key:before {
   content: "\f084";
 }
 
+/* line 470, ../scss/lib/_font-awesome.sass */
 .icon-cogs:before {
   content: "\f085";
 }
 
+/* line 473, ../scss/lib/_font-awesome.sass */
 .icon-comments:before {
   content: "\f086";
 }
 
+/* line 476, ../scss/lib/_font-awesome.sass */
 .icon-thumbs-up:before {
   content: "\f087";
 }
 
+/* line 479, ../scss/lib/_font-awesome.sass */
 .icon-thumbs-down:before {
   content: "\f088";
 }
 
+/* line 482, ../scss/lib/_font-awesome.sass */
 .icon-star-half:before {
   content: "\f089";
 }
 
+/* line 485, ../scss/lib/_font-awesome.sass */
 .icon-heart-empty:before {
   content: "\f08a";
 }
 
+/* line 488, ../scss/lib/_font-awesome.sass */
 .icon-signout:before {
   content: "\f08b";
 }
 
+/* line 491, ../scss/lib/_font-awesome.sass */
 .icon-linkedin-sign:before {
   content: "\f08c";
 }
 
+/* line 494, ../scss/lib/_font-awesome.sass */
 .icon-pushpin:before {
   content: "\f08d";
 }
 
+/* line 497, ../scss/lib/_font-awesome.sass */
 .icon-external-link:before {
   content: "\f08e";
 }
 
+/* line 500, ../scss/lib/_font-awesome.sass */
 .icon-signin:before {
   content: "\f090";
 }
 
+/* line 503, ../scss/lib/_font-awesome.sass */
 .icon-trophy:before {
   content: "\f091";
 }
 
+/* line 506, ../scss/lib/_font-awesome.sass */
 .icon-github-sign:before {
   content: "\f092";
 }
 
+/* line 509, ../scss/lib/_font-awesome.sass */
 .icon-upload-alt:before {
   content: "\f093";
 }
 
+/* line 512, ../scss/lib/_font-awesome.sass */
 .icon-lemon:before {
   content: "\f094";
 }
 
+/* line 4, ../scss/_type.scss */
 h1 abbr[title], h2 abbr[title], h3 abbr[title], h4 abbr[title], h5 abbr[title], h6 abbr[title] {
   border: none;
 }
+/* line 7, ../scss/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: inherit;
   font-weight: normal;
 }
 
+/* line 16, ../scss/_type.scss */
 body {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-[role="document"] h2 {
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.5;
-  font-family: Palatino, Palladio, georgia, serif;
+/* line 23, ../scss/_type.scss */
+h1, h2 {
+  -webkit-transition: all 125ms;
+  -moz-transition: all 125ms;
+  -ms-transition: all 125ms;
+  -o-transition: all 125ms;
+  transition: all 125ms;
+  -webkit-transform: translateZ(0, 0, 0);
+  -moz-transform: translateZ(0, 0, 0);
+  -ms-transform: translateZ(0, 0, 0);
+  -o-transform: translateZ(0, 0, 0);
+  transform: translateZ(0, 0, 0);
+}
+
+/* line 27, ../scss/_type.scss */
+h1 {
+  font-size: 2em;
   color: rgba(0, 0, 0, 0.65);
 }
-
-[role="main"] p, [role="main"] li {
-  line-height: 1.5;
+@media screen and (min-width: 1000px) {
+  /* line 27, ../scss/_type.scss */
+  h1 {
+    font-size: 4em;
+  }
+}
+/* line 33, ../scss/_type.scss */
+h1 small {
+  font-size: .5em;
+  color: rgba(0, 0, 0, 0.35);
 }
 
+/* line 38, ../scss/_type.scss */
+h2 {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #8c8c8c;
+  line-height: 1.5;
+  font-size: 1em;
+}
+@media screen and (min-width: 1000px) {
+  /* line 38, ../scss/_type.scss */
+  h2 {
+    font-size: 2em;
+  }
+}
+
+/* line 54, ../scss/_type.scss */
+[role="document"] p, [role="document"] li {
+  line-height: 1.5;
+}
+@media screen and (min-width: 1000px) {
+  /* line 54, ../scss/_type.scss */
+  [role="document"] p, [role="document"] li {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  /* line 65, ../scss/_type.scss */
+  [role="banner"] {
+    font-size: 2em;
+  }
+}
+
+/* line 71, ../scss/_type.scss */
 a {
   -webkit-transition: 125ms ease-out;
   -moz-transition: 125ms ease-out;
@@ -1079,72 +1342,50 @@ a {
   -o-transition: 125ms ease-out;
   transition: 125ms ease-out;
 }
+/* line 72, ../scss/_type.scss */
 a, a:visited {
-  color: #19244d;
+  color: #22669b;
 }
+/* line 76, ../scss/_type.scss */
 a:hover {
-  color: #73265d;
+  color: #d5613e;
 }
 
-::-moz-selection {
-  background: #73265d;
-  color: #fff;
-  text-shadow: none;
-}
-
-::selection {
-  background: #73265d;
-  color: #fff;
-  text-shadow: none;
-}
-
-header, section, footer, .featured, nav {
-  padding: 2.5% 7.5%;
-}
-
-@media screen and (min-width: 1000px) {
-  header {
-    padding-bottom: 1em;
-  }
-}
+/* line 1, ../scss/_appearance.scss */
 nav {
   text-align: center;
-  background: #1c1f35;
+  background: #22669b;
   padding-top: .5em;
   padding-bottom: .5em;
 }
+/* line 4, ../scss/_appearance.scss */
 nav ol, nav ul {
   overflow: hidden;
   *zoom: 1;
 }
+/* line 9, ../scss/_appearance.scss */
 nav li {
   text-decoration: none;
   float: left;
 }
+/* line 12, ../scss/_appearance.scss */
 nav li a {
   line-height: 2;
   text-decoration: none;
 }
+/* line 13, ../scss/_appearance.scss */
 nav li a:link, nav li a:visited {
   color: white;
 }
-.single nav li {
-  width: 10%;
-}
-.single nav li:first-child {
-  width: 45%;
-  text-align: left;
-}
-.single nav li:last-child {
-  width: 45%;
-  text-align: right;
-}
+/* line 21, ../scss/_appearance.scss */
 .front nav li {
   width: 25%;
 }
+/* line 24, ../scss/_appearance.scss */
 nav li span {
   display: none;
 }
+/* line 27, ../scss/_appearance.scss */
 nav li [class^="icon-"] {
   font-size: 18px;
   -webkit-transition: 125ms;
@@ -1152,15 +1393,22 @@ nav li [class^="icon-"] {
   -ms-transition: 125ms;
   -o-transition: 125ms;
   transition: 125ms;
+  -webkit-transform: translateZ(0, 0, 0);
+  -moz-transform: translateZ(0, 0, 0);
+  -ms-transform: translateZ(0, 0, 0);
+  -o-transform: translateZ(0, 0, 0);
+  transform: translateZ(0, 0, 0);
 }
+/* line 31, ../scss/_appearance.scss */
 nav li [class^="icon-"]:hover {
-  -webkit-transform: scale(1.35, 1.35);
-  -moz-transform: scale(1.35, 1.35);
-  -ms-transform: scale(1.35, 1.35);
-  -o-transform: scale(1.35, 1.35);
-  transform: scale(1.35, 1.35);
+  -webkit-transform: scale(1.45, 1.45);
+  -moz-transform: scale(1.45, 1.45);
+  -ms-transform: scale(1.45, 1.45);
+  -o-transform: scale(1.45, 1.45);
+  transform: scale(1.45, 1.45);
 }
 @media screen and (min-width: 1000px) {
+  /* line 9, ../scss/_appearance.scss */
   nav li {
     float: left;
     font-size: 18px;
@@ -1168,12 +1416,22 @@ nav li [class^="icon-"]:hover {
   }
 }
 
+/* line 44, ../scss/_appearance.scss */
 [role="banner"] small {
   display: block;
 }
 
+/* line 49, ../scss/_appearance.scss */
+[role="document"] {
+  padding: 2.5% 7.5%;
+  margin: 0 auto 4em;
+  max-width: 80em;
+}
+
+/* line 55, ../scss/_appearance.scss */
 [role="footer"] {
   text-align: center;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @font-face {
@@ -1182,14 +1440,17 @@ nav li [class^="icon-"]:hover {
   src: url('/css/fonts/zocial/zocial-regular-webfont.eot?#iefix') format('eot'), url('/css/fonts/zocial/zocial-regular-webfont.woff') format('woff'), url('/css/fonts/zocial/zocial-regular-webfont.ttf') format('truetype'), url('/css/fonts/zocial/zocial-regular-webfont.svg') format('svg');
 }
 
+/* line 14, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_fonts.sass */
 .ff-zocial, .zocial > span:before {
   font-family: "Zocial", sans-serif;
 }
 
+/* line 25, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_fonts.sass */
 .ff-helvetica, .ff-arial, .zocial {
   font-family: Clean, "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
+/* line 3, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_base.sass */
 .zocial, .zocial > span {
   -webkit-border-radius: 0.2em;
   -moz-border-radius: 0.2em;
@@ -1199,6 +1460,7 @@ nav li [class^="icon-"]:hover {
   position: relative;
 }
 
+/* line 8, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_base.sass */
 .zocial {
   -webkit-box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
   -moz-box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
@@ -1215,14 +1477,17 @@ nav li [class^="icon-"]:hover {
   padding: 0;
   text-decoration: none !important;
 }
+/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_base.sass */
 .zocial button::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+/* line 29, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_base.sass */
 .zocial.icon {
   width: 1.8em;
   overflow: hidden;
 }
+/* line 33, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_base.sass */
 .zocial > span {
   position: relative;
   display: inline-block;
@@ -1232,6 +1497,7 @@ nav li [class^="icon-"]:hover {
   padding-right: 0.825em;
   white-space: nowrap;
 }
+/* line 41, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_base.sass */
 .zocial > span:before {
   -webkit-box-shadow: 0.075em 0 0 rgba(255, 255, 255, 0.25);
   -moz-box-shadow: 0.075em 0 0 rgba(255, 255, 255, 0.25);
@@ -1246,6 +1512,7 @@ nav li [class^="icon-"]:hover {
   text-align: center;
   width: 1.75em;
 }
+/* line 55, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_base.sass */
 .zocial > span {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.1)), color-stop(49%, rgba(255, 255, 255, 0.05)), color-stop(51%, rgba(0, 0, 0, 0.05)), color-stop(100%, rgba(0, 0, 0, 0.1)));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.1));
@@ -1254,6 +1521,7 @@ nav li [class^="icon-"]:hover {
   background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.1));
   background: linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.1));
 }
+/* line 59, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_base.sass */
 .zocial:hover > span, .zocial:focus > span {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.15)), color-stop(49%, rgba(255, 255, 255, 0.15)), color-stop(51%, rgba(0, 0, 0, 0.1)), color-stop(100%, rgba(0, 0, 0, 0.15)));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15) 49%, rgba(0, 0, 0, 0.1) 51%, rgba(0, 0, 0, 0.15));
@@ -1262,6 +1530,7 @@ nav li [class^="icon-"]:hover {
   background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15) 49%, rgba(0, 0, 0, 0.1) 51%, rgba(0, 0, 0, 0.15));
   background: linear-gradient(top, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15) 49%, rgba(0, 0, 0, 0.1) 51%, rgba(0, 0, 0, 0.15));
 }
+/* line 63, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_base.sass */
 .zocial:active > span {
   background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(255, 255, 255, 0.1)), color-stop(30%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.1)));
   background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
@@ -1270,10 +1539,12 @@ nav li [class^="icon-"]:hover {
   background: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
   background: linear-gradient(bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
 }
+/* line 67, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_base.sass */
 .zocial > span:before {
   content: "\0020";
 }
 
+/* line 9, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_adjustments.sass */
 .adjustment-1, .zocial.twitter, .zocial.github {
   -webkit-box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
   -moz-box-shadow: inset 0 0.063em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.063em rgba(255, 255, 255, 0.6), 0 0.063em 0 rgba(255, 255, 255, 0.3);
@@ -1281,6 +1552,7 @@ nav li [class^="icon-"]:hover {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
+/* line 25, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_adjustments.sass */
 .adjustment-2, .zocial.twitter:focus > span, .zocial.github:hover > span, .zocial.github:focus > span {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(49%, rgba(255, 255, 255, 0.2)), color-stop(51%, rgba(0, 0, 0, 0.05)), color-stop(100%, rgba(0, 0, 0, 0.15)));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
@@ -1290,6 +1562,7 @@ nav li [class^="icon-"]:hover {
   background: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2) 49%, rgba(0, 0, 0, 0.05) 51%, rgba(0, 0, 0, 0.15));
 }
 
+/* line 35, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_adjustments.sass */
 .adjustment-3, .zocial.twitter:active > span, .zocial.github:active > span {
   background: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(30%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.1)));
   background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
@@ -1299,50 +1572,63 @@ nav li [class^="icon-"]:hover {
   background: linear-gradient(bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.1));
 }
 
+/* line 390, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_mixins.sass */
 .zocial.twitter {
   background: #e9f9ff;
   color: #3c6b9c !important;
 }
+/* line 398, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_mixins.sass */
 .zocial.twitter > span:before {
   content: "T";
 }
 
+/* line 111, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_mixins.sass */
 .zocial.dribbble {
   background: #ea4c89;
 }
+/* line 113, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_mixins.sass */
 .zocial.dribbble > span:before {
   content: "D";
 }
 
+/* line 312, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_mixins.sass */
 .zocial.pinboard {
   background: blue;
 }
+/* line 314, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_mixins.sass */
 .zocial.pinboard > span:before {
   content: "n";
 }
 
+/* line 279, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_mixins.sass */
 .zocial.linkedin {
   background: #0083a8;
 }
+/* line 281, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_mixins.sass */
 .zocial.linkedin > span:before {
   content: "L";
 }
 
+/* line 174, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_mixins.sass */
 .zocial.github {
   color: #050505 !important;
   background: #fbfbfb;
 }
+/* line 182, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_mixins.sass */
 .zocial.github > span:before {
   content: "g";
 }
 
+/* line 273, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_mixins.sass */
 .zocial.lastfm {
   background: #dc1a23;
 }
+/* line 275, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/zocial-0.0.4/stylesheets/partials/_mixins.sass */
 .zocial.lastfm > span:before {
   content: "l";
 }
 
+/* line 10, ../scss/components/_social.scss */
 #social {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
   background: -webkit-linear-gradient(#ffffff, #e6e6e6);
@@ -1350,12 +1636,16 @@ nav li [class^="icon-"]:hover {
   background: -o-linear-gradient(#ffffff, #e6e6e6);
   background: -ms-linear-gradient(#ffffff, #e6e6e6);
   background: linear-gradient(#ffffff, #e6e6e6);
-  border: solid rgba(0, 0, 0, 0.2);
-  border-width: 1px 0;
+  margin: 0;
+  padding: 2.5% 7.5%;
+  padding-bottom: 15%;
 }
+/* line 17, ../scss/components/_social.scss */
 #social h2 {
   text-align: center;
+  margin-bottom: 1em;
 }
+/* line 22, ../scss/components/_social.scss */
 .fontface #social ul {
   list-style: none;
   overflow: hidden;
@@ -1364,21 +1654,25 @@ nav li [class^="icon-"]:hover {
   padding: 0;
   margin-bottom: 2em;
 }
+/* line 11, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
 .fontface #social ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
 }
+/* line 29, ../scss/components/_social.scss */
 .fontface #social li {
   display: block;
   width: 25%;
   float: left;
 }
 @media screen and (min-width: 600px) {
+  /* line 29, ../scss/components/_social.scss */
   .fontface #social li {
     width: 14.286%;
   }
 }
+/* line 37, ../scss/components/_social.scss */
 .fontface #social a {
   display: block;
   -webkit-border-radius: 1em;
@@ -1394,49 +1688,61 @@ nav li [class^="icon-"]:hover {
   -o-transition: 125ms ease-in;
   transition: 125ms ease-in;
   text-align: center;
-  font-size: 48px;
+  font-size: 2.5em;
   font-family: zocial;
   color: rgba(0, 0, 0, 0.35);
 }
+/* line 48, ../scss/components/_social.scss */
 .fontface #social a:hover {
   text-shadow: white 0 2px 10px;
 }
+/* line 52, ../scss/components/_social.scss */
 .fontface #social span {
   display: none;
 }
+/* line 55, ../scss/components/_social.scss */
 .fontface #social .twitter a:hover {
   color: #46c0fb;
 }
+/* line 58, ../scss/components/_social.scss */
 .fontface #social .linkedin a:hover {
   color: #0083a8;
 }
+/* line 61, ../scss/components/_social.scss */
 .fontface #social .dribbble a:hover {
   color: #ea4c89;
 }
+/* line 64, ../scss/components/_social.scss */
 .fontface #social .github a:hover {
   color: black;
 }
+/* line 67, ../scss/components/_social.scss */
 .fontface #social .lastfm a:hover {
   color: #dc1a23;
 }
+/* line 70, ../scss/components/_social.scss */
 .fontface #social .rdio a:hover {
   color: #00a9f9;
 }
+/* line 73, ../scss/components/_social.scss */
 .fontface #social .pinboard a:hover {
   color: blue;
 }
-
-.front h2 {
-  font-weight: bold;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
+@media screen and (min-width: 1000px) {
+  /* line 10, ../scss/components/_social.scss */
+  #social {
+    font-size: 2em;
+  }
 }
+
 @media screen and (min-width: 600px) {
+  /* line 4, ../scss/components/_front.scss */
   .front nav li {
     float: left;
     width: 25%;
   }
 }
+/* line 11, ../scss/components/_front.scss */
 .front section ol, .front section ul {
   list-style: none;
   margin: 0;
@@ -1444,45 +1750,39 @@ nav li [class^="icon-"]:hover {
   overflow: hidden;
   *zoom: 1;
 }
+/* line 11, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
 .front section ol li, .front section ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
 }
+/* line 18, ../scss/components/_front.scss */
+.front #about {
+  display: none;
+}
 @media screen and (min-width: 1000px) {
+  /* line 22, ../scss/components/_front.scss */
   .front [role="document"] {
     overflow: hidden;
     *zoom: 1;
   }
+  /* line 24, ../scss/components/_front.scss */
   .front [role="document"] header, .front [role="document"] nav, .front [role="document"] section, .front [role="document"] footer {
     float: left;
     width: 100%;
   }
-  .front [role="document"] header, .front [role="document"] nav, .front [role="document"] #about {
-    padding-left: 9.5%;
-  }
+  /* line 28, ../scss/components/_front.scss */
   .front [role="document"] header, .front [role="document"] nav {
     clear: both;
   }
-  .front [role="document"] #about, .front [role="document"] #writing {
-    padding-right: 0;
-  }
-  .front [role="document"] #about {
-    width: 34%;
-  }
-  .front [role="document"] #about h3, .front [role="document"] #about p {
-    max-width: 94%;
-  }
-  .front [role="document"] #writing {
-    width: 60%;
-    padding-left: 4%;
-  }
 }
 @media screen and (min-width: 1000px) and (min-width: 1000px) {
+  /* line 32, ../scss/components/_front.scss */
   .front [role="document"] section {
     padding-top: 1em;
   }
 }
+/* line 49, ../scss/components/_front.scss */
 .front .featured {
   clear: both;
   text-align: center;
@@ -1491,43 +1791,36 @@ nav li [class^="icon-"]:hover {
   font-size: 24px;
 }
 
+/* line 60, ../scss/components/_front.scss */
+#writing h2 small {
+  display: block;
+  font-weight: bold;
+  font-size: .65em;
+  color: #a5bbcc;
+}
+/* line 67, ../scss/components/_front.scss */
+#writing blockquote {
+  margin: 0;
+  line-height: 1.65;
+}
+@media screen and (min-width: 1000px) {
+  /* line 72, ../scss/components/_front.scss */
+  #writing h2 {
+    font-size: 2em;
+  }
+}
+/* line 76, ../scss/components/_front.scss */
 #writing li {
-  margin-bottom: .55em;
-  line-height: 1.35;
+  margin: 4em 0;
 }
-@media screen and (min-width: 600px) {
-  #writing li {
-    font-family: Palatino, Palladio, georgia, serif;
-    font-size: 24px;
-    float: left;
-    width: 100%;
-  }
-  #writing li:nth-child(5) {
-    margin-bottom: 1.55em;
-  }
-}
-#writing li:nth-child(n+6) {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: 1.5;
-}
-@media screen and (min-width: 600px) {
-  #writing li:nth-child(n+6) {
-    width: 25%;
-    float: left;
-    margin: .45em 0 1.85em;
-  }
-  #writing li:nth-child(n+6) a {
-    display: block;
-    min-height: 5em;
-    width: 80%;
-  }
-}
+/* line 105, ../scss/components/_front.scss */
 #writing a {
   text-decoration: none;
 }
 
+/* line 110, ../scss/components/_front.scss */
 #design {
+  display: none;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(70%, #293447), color-stop(100%, #131424)) fixed;
   background: -webkit-linear-gradient(#293447 70%, #131424) fixed;
   background: -moz-linear-gradient(#293447 70%, #131424) fixed;
@@ -1536,28 +1829,34 @@ nav li [class^="icon-"]:hover {
   background: linear-gradient(#293447 70%, #131424) fixed;
   color: rgba(255, 255, 255, 0.75);
 }
+/* line 114, ../scss/components/_front.scss */
 #design h2 {
   text-align: center;
   font-size: 36px;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   color: white;
 }
+/* line 119, ../scss/components/_front.scss */
 #design h2 small {
   font-family: "Baskerville", "Palatino Linotype", fantasy;
   color: rgba(255, 255, 255, 0.55);
 }
+/* line 123, ../scss/components/_front.scss */
 #design h2 abbr {
   font-family: Zapfino;
 }
+/* line 127, ../scss/components/_front.scss */
 #design li {
   width: 50%;
   float: left;
 }
 @media screen and (min-width: 1250px) {
+  /* line 127, ../scss/components/_front.scss */
   #design li {
     width: 33.33333%;
   }
 }
+/* line 134, ../scss/components/_front.scss */
 #design a {
   display: block;
   margin: 8px 10% 10%;
@@ -1579,6 +1878,7 @@ nav li [class^="icon-"]:hover {
   transition: 125ms ease-out;
   max-width: 400px;
 }
+/* line 143, ../scss/components/_front.scss */
 #design a:hover {
   border-color: rgba(0, 0, 0, 0.22);
   -webkit-transform: scale(1.1, 1.1) rotate(-2deg);
@@ -1591,117 +1891,132 @@ nav li [class^="icon-"]:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0 0.5em 15px -0.5em;
 }
 @media screen and (min-width: 1000px) {
+  /* line 134, ../scss/components/_front.scss */
   #design a {
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1250px) {
+  /* line 134, ../scss/components/_front.scss */
   #design a {
     margin-left: 7%;
     margin-right: 7%;
   }
 }
+/* line 158, ../scss/components/_front.scss */
 #design img {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
+/* line 162, ../scss/components/_front.scss */
 .js #design img.full-size {
   display: none;
 }
 @media screen and (min-width: 600px) {
+  /* line 161, ../scss/components/_front.scss */
   .js #design img {
     display: none;
   }
+  /* line 167, ../scss/components/_front.scss */
   .js #design img.full-size {
     display: block;
   }
 }
 
-#pinboard {
-  font-size: 11px;
+/* line 2, ../scss/components/_posts.scss */
+.single nav {
+  margin: 0;
+  padding: 2.5% 7.5%;
 }
-#pinboard li {
-  width: 33.33333%;
-  float: left;
+/* line 5, ../scss/components/_posts.scss */
+.single nav li {
+  width: 10%;
 }
-#pinboard a {
-  display: block;
-  margin: 4px;
-  background: rgba(0, 0, 0, 0.15);
-  height: 7.5em;
-  padding: 8px;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.75);
-  -webkit-transition: 125ms ease-out;
-  -moz-transition: 125ms ease-out;
-  -ms-transition: 125ms ease-out;
-  -o-transition: 125ms ease-out;
-  transition: 125ms ease-out;
+/* line 7, ../scss/components/_posts.scss */
+.single nav li i {
+  font-size: 2em;
 }
-#pinboard a:hover {
-  background: #2b5cd0;
-  color: white;
+/* line 10, ../scss/components/_posts.scss */
+.single nav li:first-child {
+  width: 45%;
+  text-align: left;
 }
-
-@media screen and (min-width: 1000px) {
-  .single nav li {
-    width: 33.33333%;
-  }
+/* line 14, ../scss/components/_posts.scss */
+.single nav li:last-child {
+  width: 45%;
+  text-align: right;
 }
+/* line 21, ../scss/components/_posts.scss */
 .single section img {
   max-width: 100%;
 }
+/* line 24, ../scss/components/_posts.scss */
 .single section .img {
   width: 150%;
   margin-left: -25%;
 }
-.single article {
-  font-size: 18px;
-  max-width: 600px;
-}
-@media screen and (min-width: 600px) {
-  .single article {
-    margin: 0 auto 5em;
-  }
-}
+/* line 38, ../scss/components/_posts.scss */
 .single blockquote {
   margin-left: 1.5em;
   margin-right: 1.5em;
   font-style: italic;
   font-family: Palatino, Palladio, georgia, serif;
 }
+/* line 43, ../scss/components/_posts.scss */
 .single blockquote em {
   font-style: normal;
 }
+/* line 48, ../scss/components/_posts.scss */
 .single .byline {
   color: rgba(0, 0, 0, 0.45);
-  font-size: 12px;
   line-height: 1.5;
+  margin: 0 0 2em;
+  border: rgba(0, 0, 0, 0.15) solid;
+  border-width: 0 0 1px;
+  padding: 2em 0;
 }
+/* line 51, ../scss/components/_posts.scss */
 .single .byline a {
   color: rgba(0, 0, 0, 0.65);
 }
+/* line 54, ../scss/components/_posts.scss */
+.single .byline p {
+  margin: 0;
+}
+@media screen and (min-width: 1000px) {
+  /* line 48, ../scss/components/_posts.scss */
+  .single .byline {
+    margin: 1em 0 4em;
+  }
+}
 
+/* line 1, ../scss/posts/_steve.scss */
 .steve {
   background: #1D1D1D;
   color: #ededed;
 }
+/* line 5, ../scss/posts/_steve.scss */
 .steve h1, .steve h2 {
   color: #FDFDFD;
 }
+/* line 9, ../scss/posts/_steve.scss */
 .steve article .byline {
   color: #cccccc;
 }
+/* line 12, ../scss/posts/_steve.scss */
 .steve article a {
   color: #fbfbfb;
 }
+/* line 18, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .steve article a:visited {
   color: #fbfbfb;
 }
+/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .steve article a:hover {
   color: #fbfbfb;
 }
+/* line 27, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .steve article a:active {
   color: #fbfbfb;
 }
