@@ -60,6 +60,10 @@
     }
     border: rgba(0,0,0,.15) solid;
     border-width: 0 0 1px;
-    padding: 2em 0;
+    padding-bottom: 2em;
+    @include respond-to(desktop) {
+      padding-top: 2em;
+      padding-bottom: 4em;
+    }
   }      
 }

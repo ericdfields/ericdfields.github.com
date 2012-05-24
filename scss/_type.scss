@@ -41,7 +41,7 @@ h2 {
 	margin-bottom: 1rem;
 	color: darken(#a6a6a6,10);
 	line-height: 1.5;
-	font-size: 1em;
+	font-size: 1.25em;
 	@include respond-to(desktop) {
 		font-size: 2em;
 	}

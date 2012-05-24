@@ -60,18 +60,13 @@
     small {
       display: block;
       font-weight: bold;
-      font-size: .65em;
+      font-size: .75em;
       color: #a5bbcc;
     }
   }
   blockquote {
     margin: 0;
     line-height: 1.65;
-  }
-  @include respond-to(desktop) {
-    h2 {
-      font-size: 2em;
-    }
   }
   li {
     margin: 4em 0;
