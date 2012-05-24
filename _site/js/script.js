@@ -1,4 +1,0 @@
-/* Author: Eric D. Fields
-
-*/
-
