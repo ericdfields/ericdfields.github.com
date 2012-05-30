@@ -1307,7 +1307,7 @@ h2 {
   margin-bottom: 1rem;
   color: #8c8c8c;
   line-height: 1.5;
-  font-size: 1.25em;
+  font-size: 1em;
 }
 @media screen and (min-width: 1000px) {
   /* line 38, ../scss/_type.scss */
@@ -1795,7 +1795,7 @@ nav li [class^="icon-"]:hover {
 #writing h2 small {
   display: block;
   font-weight: bold;
-  font-size: .75em;
+  font-size: .65em;
   color: #a5bbcc;
 }
 /* line 67, ../scss/components/_front.scss */
@@ -1803,16 +1803,22 @@ nav li [class^="icon-"]:hover {
   margin: 0;
   line-height: 1.65;
 }
-/* line 71, ../scss/components/_front.scss */
+@media screen and (min-width: 1000px) {
+  /* line 72, ../scss/components/_front.scss */
+  #writing h2 {
+    font-size: 2em;
+  }
+}
+/* line 76, ../scss/components/_front.scss */
 #writing li {
   margin: 4em 0;
 }
-/* line 100, ../scss/components/_front.scss */
+/* line 105, ../scss/components/_front.scss */
 #writing a {
   text-decoration: none;
 }
 
-/* line 105, ../scss/components/_front.scss */
+/* line 110, ../scss/components/_front.scss */
 #design {
   display: none;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(70%, #293447), color-stop(100%, #131424)) fixed;
@@ -1823,34 +1829,34 @@ nav li [class^="icon-"]:hover {
   background: linear-gradient(#293447 70%, #131424) fixed;
   color: rgba(255, 255, 255, 0.75);
 }
-/* line 109, ../scss/components/_front.scss */
+/* line 114, ../scss/components/_front.scss */
 #design h2 {
   text-align: center;
   font-size: 36px;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   color: white;
 }
-/* line 114, ../scss/components/_front.scss */
+/* line 119, ../scss/components/_front.scss */
 #design h2 small {
   font-family: "Baskerville", "Palatino Linotype", fantasy;
   color: rgba(255, 255, 255, 0.55);
 }
-/* line 118, ../scss/components/_front.scss */
+/* line 123, ../scss/components/_front.scss */
 #design h2 abbr {
   font-family: Zapfino;
 }
-/* line 122, ../scss/components/_front.scss */
+/* line 127, ../scss/components/_front.scss */
 #design li {
   width: 50%;
   float: left;
 }
 @media screen and (min-width: 1250px) {
-  /* line 122, ../scss/components/_front.scss */
+  /* line 127, ../scss/components/_front.scss */
   #design li {
     width: 33.33333%;
   }
 }
-/* line 129, ../scss/components/_front.scss */
+/* line 134, ../scss/components/_front.scss */
 #design a {
   display: block;
   margin: 8px 10% 10%;
@@ -1872,7 +1878,7 @@ nav li [class^="icon-"]:hover {
   transition: 125ms ease-out;
   max-width: 400px;
 }
-/* line 138, ../scss/components/_front.scss */
+/* line 143, ../scss/components/_front.scss */
 #design a:hover {
   border-color: rgba(0, 0, 0, 0.22);
   -webkit-transform: scale(1.1, 1.1) rotate(-2deg);
@@ -1885,34 +1891,34 @@ nav li [class^="icon-"]:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0 0.5em 15px -0.5em;
 }
 @media screen and (min-width: 1000px) {
-  /* line 129, ../scss/components/_front.scss */
+  /* line 134, ../scss/components/_front.scss */
   #design a {
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1250px) {
-  /* line 129, ../scss/components/_front.scss */
+  /* line 134, ../scss/components/_front.scss */
   #design a {
     margin-left: 7%;
     margin-right: 7%;
   }
 }
-/* line 153, ../scss/components/_front.scss */
+/* line 158, ../scss/components/_front.scss */
 #design img {
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
-/* line 157, ../scss/components/_front.scss */
+/* line 162, ../scss/components/_front.scss */
 .js #design img.full-size {
   display: none;
 }
 @media screen and (min-width: 600px) {
-  /* line 156, ../scss/components/_front.scss */
+  /* line 161, ../scss/components/_front.scss */
   .js #design img {
     display: none;
   }
-  /* line 162, ../scss/components/_front.scss */
+  /* line 167, ../scss/components/_front.scss */
   .js #design img.full-size {
     display: block;
   }
@@ -1968,7 +1974,7 @@ nav li [class^="icon-"]:hover {
   margin: 0 0 2em;
   border: rgba(0, 0, 0, 0.15) solid;
   border-width: 0 0 1px;
-  padding-bottom: 2em;
+  padding: 2em 0;
 }
 /* line 51, ../scss/components/_posts.scss */
 .single .byline a {
@@ -1982,13 +1988,6 @@ nav li [class^="icon-"]:hover {
   /* line 48, ../scss/components/_posts.scss */
   .single .byline {
     margin: 1em 0 4em;
-  }
-}
-@media screen and (min-width: 1000px) {
-  /* line 48, ../scss/components/_posts.scss */
-  .single .byline {
-    padding-top: 2em;
-    padding-bottom: 4em;
   }
 }
 
