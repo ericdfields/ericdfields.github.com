@@ -43,9 +43,13 @@ Look, that year that just went by where you managed to successfully do a job whe
 
 You also haven't mastered the tools you do every day and you know them a heck of a lot better than you do the new shiny ones, so why not try to *refine* something you've got a decent footing with rather than _start all over_ with something new for the sake of its newness?
 
-This post is a reflection on my response to a recent post on [Twitter's engineering blog](http://www.glassdoor.com/Salaries/copy-chief-salary-SRCH_KO0,10.htm) about moving some of the client-side UI rendering _back_ to the server, away from Javascript. It came at just as I recently burned some cycles experimenting with Backbone, Spine and Ember mostly because I felt I should really get familiar with at least one of them.
+This post is a reflection on a recent post on [Twitter's engineering blog](http://www.glassdoor.com/Salaries/copy-chief-salary-SRCH_KO0,10.htm) about moving some of the client-side UI rendering _back_ to the server, away from Javascript. 
 
-Because, um, I should. Even though I can't even begin to give you an accurate explanation of how jQuery works.
+Funny enough, I recently burned some cycles experimenting with Backbone, Spine and Ember and decided I couldn't find any of them useful for me right now. Javascript MVC is the shiny of the moment for me. I felt defeated that I wasn't going the extra distance to master one of these tools.
+
+Again, NO use for any of them right now, still felt like I should be using one of them. 
+
+But straight jQuery is doing me a world of good. It's a tool I'm very familiar with, but can't even begin to give a decent explanation on how it works. It's not shiny anymore, but it works amazingly well.
 
 
 
