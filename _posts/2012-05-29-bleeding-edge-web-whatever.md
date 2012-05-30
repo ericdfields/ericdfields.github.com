@@ -49,7 +49,7 @@ Funny enough, I recently burned some cycles experimenting with Backbone, Spine a
 
 Again, NO use for any of them right now, still felt like I should be using one of them. 
 
-But straight jQuery is doing me a world of good. It's a tool I'm very familiar with, but can't even begin to give a decent explanation on how it works. It's not shiny anymore, but it works amazingly well.
+But straight jQuery is doing me a world of good. It's a tool I'm very familiar with, but can't even begin to give a decent explanation on how it works. It's not shiny anymore, but it works amazingly well, and I need to feel better about the work I do with it.
 
 
 
