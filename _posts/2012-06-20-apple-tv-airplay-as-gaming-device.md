@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Is AirPlay an untapped casual gaming console?
-description: A big screen + multitouch device + a room full of people = a video game opportunity no one is taking advantage of. It might be because we can't, physically, but hopefully we're just limited to our imaginations.
+description: A big screen + multitouch device + a room full of people = a video game opportunity no one is taking advantage of. It might be because we can't because of hardware and software restrictions (Apple Law), but hopefully we're just limited to our imaginations.
 author: Eric D. Fields
 status: published
 date: 2012-06-20 15:03:22
