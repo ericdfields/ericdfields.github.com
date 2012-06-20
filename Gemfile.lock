@@ -11,16 +11,14 @@ GEM
     chunky_png (1.2.5)
     classifier (1.3.3)
       fast-stemmer (>= 1.0.0)
-    compass (0.12.1)
+    compass (0.13.alpha.0)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
-      sass (~> 3.1)
-    compass-susy-plugin (0.9)
-      compass (>= 0.11.1)
+      sass (~> 3.2.0.alpha.93)
     directory_watcher (1.4.1)
     facade (1.0.5)
     fast-stemmer (1.0.0)
-    fssm (0.2.8.1)
+    fssm (0.2.9)
     heroku (2.21.3)
       launchy (>= 0.3.2)
       netrc (~> 0.7.1)
@@ -53,7 +51,10 @@ GEM
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rubyzip (0.9.6.1)
-    sass (3.2.0.alpha.94)
+    sass (3.2.0.alpha.244)
+    susy (1.0.rc.1)
+      compass (>= 0.12.2.rc.0)
+      sass (>= 3.2.0.alpha.237)
     syntax (1.0.0)
     yui-compressor (0.9.6)
       POpen4 (>= 0.1.4)
@@ -64,13 +65,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass (>= 0.12.rc.1)
-  compass-susy-plugin
+  compass (>= 0.13.alpha.0)
   heroku
   jekyll
   pathname2
   rack-jekyll
   rdiscount
-  sass (>= 3.2.0.alpha.91)
+  sass (>= 3.2.0.alpha.244)
+  susy
   yui-compressor
   zocial

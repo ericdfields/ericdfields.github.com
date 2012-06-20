@@ -1,0 +1,25 @@
+// section.content {
+//   // calling susy's container mixin will apply the grid to that element.
+//   @include container;
+// }
+
+.container {
+	@include container($total-columns, $break);
+}
+[role="document"] {
+	@extend .container;
+	// @include at-breakpoint(20em 8) {
+	// 	@include container;
+	// }
+  // padding: 2.5% 7.5%;
+  // margin: 0 auto 4em;
+  // max-width: 80em;
+}
+
+// // development
+// [role="document"] {
+// 	// @include grid-background($total-columns, $column-width, $gutter-width, $base-line-height, $grid-padding, $force-fluid: true);
+// 	// @include at-breakpoint(20em 8) {
+// 	// 	@include grid-background(8, $column-width, $gutter-width, $base-line-height, $grid-padding, $force-fluid: true);
+// 	// }
+// }

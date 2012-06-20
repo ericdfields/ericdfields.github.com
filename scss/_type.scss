@@ -1,72 +1,187 @@
 @import "lib/font-awesome";
 
-h1,h2,h3,h4,h5,h6 {
-	abbr[title] {
-		border: none;
-	}
-	small {
-		font-size: inherit;
-		font-weight: normal;
-	}
-	// &:first-child {
-	// 	margin-top: 0;
-	// }
-}
-
-body {
-	font-family: $sans-serif-stack;
-}
-
-//
-//	Document Copy
-//
-h1,h2 {
+h1,h2,h3,p,li {
 	@include transition(all 125ms);
 	@include transform(translateZ(0,0,0));
 }
+h1,h2,h3,h4 {
+	+ p {
+		margin-top: 0;
+	}
+}
 h1 {
-	font-size: 2em;
-	@include respond-to(desktop) {
-		font-size: 4em;
+	color: rgba(0,0,0,.65);	
+	$font-size: $base-font-size * 1.8;
+	@include adjust-font-size-to($font-size,1.25);
+	@include at-breakpoint($break) {
+		$font-size: $base-font-size * 2.75;
+		@include adjust-font-size-to($font-size,2);
 	}
-	color: rgba(0,0,0,.65);
-	small {
-		font-size: .5em;
-		color: rgba(0,0,0,.35)
-	}
-}
-h2 {
-  font-family: $sans-serif-stack;
-  font-weight: bold;
-	margin-bottom: 1rem;
-	color: darken(#a6a6a6,10);
-	line-height: 1.5;
-	font-size: 1.25em;
-	@include respond-to(desktop) {
-		font-size: 2em;
-	}
-}
-
-//
-//  Body Copy
-//
-[role="document"] {
-	p,li {
-		line-height: 1.5;
-		@include respond-to(desktop) {
-			font-size: 1.5em;
+	.front & {
+		@include leader(2,$font-size,padding);
+		small {
+			font-weight: normal;
+			@include adjust-font-size-to($font-size * .25, .5);
+			color: rgba(0,0,0,.35)
+		}
+		@include at-breakpoint($break) {
+			$font-size: $base-font-size * 3;
+			@include adjust-font-size-to($font-size);
+			@include trailer;
 		}
 	}
 }
+h2 {
+	$font-size: $base-font-size * 1.5;
+	color: rgba(0,0,0,.85);	
+	@include adjust-font-size-to($font-size,1.15);
+	@include margin-leader(2,$font-size);
+	@include margin-trailer(.5,$font-size);
+	header & {
+		@include adjust-font-size-to($base-font-size,1.15);
+		@include margin-leader(0);
+		@include at-breakpoint($break) {
+			$font-size: $base-font-size * 1.5;
+			@include adjust-font-size-to($font-size,1.5);
+		}
+	}
+	article & {
 
-//
-// Special Copy
-//
-[role="banner"] {
-	@include respond-to(desktop) {
-		font-size: 2em;
 	}
 }
+h3 {
+	@include margin-trailer(0);
+	color: rgba(0,0,0,.85);
+	font-style: italic;
+}
+
+// h1 {
+// 	$font-size: $base-font-size * 6;
+// 	color: rgba(0,0,0,.65);
+// 	.front & {
+// 		@include adjust-font-size-to($font-size);
+// 		@include leader(2,$font-size,padding);
+// 		small {
+// 			font-weight: normal;
+// 			@include adjust-font-size-to($font-size * .25, .5);
+// 			color: rgba(0,0,0,.35)
+// 		}
+// 		@include at-breakpoint($break) {
+// 			$font-size: $base-font-size * 6;
+// 			@include adjust-font-size-to($font-size);
+// 			@include trailer;
+// 		}
+// 	}
+// 	// @include adjust-font-size-to($base-font-size * 2, $lines: 1.5);
+// 	// margin: 0;
+// }
+// h2 {
+// 	color: rgba(0,0,0,.65);
+// 	font-weight: normal;
+// 	$font-size: $base-font-size * 1.5;
+// 	$leading: 1.25;
+// 	@include adjust-font-size-to($font-size, $leading);
+// 	.front & {
+// 		@include leader;
+// 		@include trailer;
+// 		@include at-breakpoint($break) {
+// 			$font-size: $base-font-size * 2;
+// 			@include adjust-font-size-to($font-size);
+// 			margin-bottom: 0;
+// 		}
+// 	}
+// 	header & {
+// 		@include adjust-font-size-to($base-font-size, $leading);
+// 	}
+// 	// @include adjust-leading-to(1);
+// }
+// h3 {
+// 	$font-size: $base-font-size * 1.5;
+// 	$leading: 1.25;
+// 	@include adjust-font-size-to($font-size, $leading);
+// 	@include leader;
+// 	font-weight: normal;
+// 	color: rgba(0,0,0,.65);
+// 	.front & {
+// 		@include at-breakpoint($break) {
+// 			$font-size: $base-font-size * 2;
+// 			@include adjust-font-size-to($font-size);
+// 		}
+// 	}
+// }
+ul,ol {
+	padding-left: 1.5em;
+}
+p,li,blockquote {
+	@include trailer;
+	margin-top: 0;
+	&:first-child {
+    @include leader;  
+  }
+}
+// p,li {
+// 	@include adjust-font-size-to($base-font-size * .75);
+// 	@include at-breakpoint($break) {
+// 		$font-size: $base-font-size * 1.25;
+// 		@include adjust-font-size-to($font-size,1.5);
+// 	}
+// }
+
+// // h1,h2,h3,h4,h5,h6 {
+// // 	abbr[title] {
+// // 		border: none;
+// // 	}
+// // 	small {
+// // 		font-size: inherit;
+// // 		font-weight: normal;
+// // 	}
+// // 	// &:first-child {
+// // 	// 	margin-top: 0;
+// // 	// }
+// // }
+
+// // body {
+// // 	font-family: $sans-serif-stack;
+// // }
+
+// // //
+// // //	Document Copy
+// // //
+// // h1 {
+// // 	font-size: 2em;
+// // }
+// // h2 {
+// //   font-family: $sans-serif-stack;
+// //   font-weight: bold;
+// // 	margin-bottom: 1rem;
+// // 	color: darken(#a6a6a6,10);
+// // 	line-height: 1.5;
+// // 	font-size: 1.25em;
+// // 	@include respond-to(desktop) {
+// // 		font-size: 2em;
+// // 	}
+// // }
+
+// // //
+// // //  Body Copy
+// // //
+// // [role="document"] {
+// // 	p,li {
+// // 		line-height: 1.5;
+// // 		@include respond-to(desktop) {
+// // 			font-size: 1.5em;
+// // 		}
+// // 	}
+// // }
+
+// // //
+// // // Special Copy
+// // //
+// // [role="banner"] {
+// // 	@include respond-to(desktop) {
+// // 		font-size: 2em;
+// // 	}
+// // }
 
 a {
 	&,&:visited {

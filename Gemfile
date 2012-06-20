@@ -7,7 +7,7 @@ gem "rdiscount"
 gem "yui-compressor"
 gem "pathname2"
 
-gem 'sass', '>= 3.2.0.alpha.91'
-gem "compass", ">= 0.12.rc.1"
-gem "compass-susy-plugin"
+gem 'sass', '>= 3.2.0.alpha.244'
+gem "compass", ">= 0.13.alpha.0"
+gem "susy"
 gem "zocial"

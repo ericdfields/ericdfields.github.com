@@ -11,28 +11,30 @@
   @include background(linear-gradient(#fff,#e6e6e6));
   // border: solid rgba(0,0,0,.2);
   // border-width: 1px 0;
-  margin: 0;
-  padding: 2.5% 7.5%;
-  padding-bottom: 15%;
+  // padding: 2.5% 7.5%;
+  // padding-bottom: 15%;
+  @include padding-trailer(2);
   h2 {
     text-align: center;
-    margin-bottom: 1em;
   }
   .fontface & {
     ul {
       @include no-bullets;
       @include clearfix;
       margin: 0;
-      padding: 0;
+      @include padding-leader;
+      @include padding-trailer;
       margin-bottom: 2em;
+      padding-left: 0;
     }
     li {
-      display: block;
       width: 25%;
       float: left;
-      @include respond-to(tablet) {
+      @include at-breakpoint($break) {
         width: 14.28571%
       }
+      @include margin-trailer;
+      @include margin-leader;
     }
     a {
       display: block;
@@ -74,7 +76,11 @@
       color: blue;
     }
   }
-  @include respond-to(desktop) {
-    font-size: 2em;
-  }
+  // @include respond-to(desktop) {
+  //   font-size: 2em;
+  // }
+}
+
+[role="footer"] {
+  @include adjust-font-size-to($base-font-size * .75);
 }

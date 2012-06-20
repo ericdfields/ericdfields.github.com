@@ -1,11 +1,18 @@
 .single { 
   nav {
     margin: 0;
-    padding: 2.5% 7.5%;
+    padding: 0;
+    @include margin-trailer(2);
+    // padding: 2.5% 7.5%;
     li {
       width: 10%;
+      @include inline-block;
+      margin: 0;
+      padding: 0 1em;
       i {
-        font-size: 2em;
+        @include at-breakpoint($break) {
+          @include adjust-font-size-to($base-font-size * 2);
+        }
       }
       &:first-child {
         width: 45%;
@@ -17,53 +24,26 @@
       }
     }
   }
-  section {
-    img {
-      max-width: 100%;
-    }                 
-    .img {
-      width: 150%;
-      margin-left: -25%;
-    }
-  }
-  article {
-    // @extend .clearfix;
-    // font-size: 18px;
-    // max-width: 600px;
-    // @include respond-to(tablet) {
-    //   margin: 0 auto 5em;
-    // }
-    
-  }
-  blockquote {
-    margin-left: #{24/$em}em;
-    margin-right: #{24/$em}em;   
-    font-style: italic;
-    font-family: $serif-stack;
-    em {
-      font-style: normal;
-    }
-  }
 
   .byline {
     color: rgba(0,0,0,0.45);
-    line-height: 1.5;
+    background: white;
     a {
       color: rgba(0,0,0,0.65);
     }
     p {
       margin: 0;
     }
-    margin: 0 0 2em;
-    @include respond-to(desktop) {
-      margin: 1em 0 4em;
-    }
-    border: rgba(0,0,0,.15) solid;
-    border-width: 0 0 1px;
-    padding-bottom: 2em;
-    @include respond-to(desktop) {
-      padding-top: 2em;
-      padding-bottom: 4em;
+    @include padding-trailer(.5);
+    @include margin-leader;
+    @include margin-trailer;
+    border: rgba(0,0,0,.25) double;
+    border-width: 0 0 3px 0;
+    @include at-breakpoint($break) {
+      // @include padding-leader;
+      @include padding-trailer;
+      @include margin-trailer(2);
+      // @include adjust-font-size-to($base-font-size * .75);
     }
   }      
 }

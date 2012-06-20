@@ -1,15 +1,31 @@
 // lib
 @import "compass";
+// @import "compass/reset";
+// @import "susy_defaults";
 
 // base
-@import "helpers/variables";
+@import "helpers/init";
 @import "helpers/mixins";
 @import "helpers/h5bp_reset";
-@import "helpers/reset";
 @import "helpers/non-semantic-helpers";
+
+* {
+  @include box-sizing(border-box);
+}
+body {
+	@include adjust-font-size-to($base-font-size * .85);
+	@include at-breakpoint($break) {
+		@include adjust-font-size-to($base-font-size);
+	}
+	@include at-breakpoint($break-large) {
+		@include adjust-font-size-to($base-font-size * 1.5);
+	}
+}
+
 
 // global
 @import "type";
+@import "grid";
 @import "appearance";
 
 // specific
