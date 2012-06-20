@@ -33,23 +33,26 @@ audio[controls], canvas, video {
  * 4. Prevent iOS text size adjust on device orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
-/* line 32, ../scss/helpers/_h5bp_reset.scss */
+/* line 66, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 34, ../scss/helpers/_h5bp_reset.scss */
+html {
   overflow-y: scroll;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* line 34, ../scss/helpers/_h5bp_reset.scss */
+/* line 36, ../scss/helpers/_h5bp_reset.scss */
 body {
   margin: 0;
-  font-size: 13px;
-  line-height: 1.231;
 }
 
-/* line 36, ../scss/helpers/_h5bp_reset.scss */
+/* line 38, ../scss/helpers/_h5bp_reset.scss */
 body, button, input, select, textarea {
   font-family: sans-serif;
   color: #222;
@@ -60,14 +63,14 @@ body, button, input, select, textarea {
  * No text-shadow: twitter.com/miketaylr/status/12228805301
  * Also: hot pink!
  */
-/* line 44, ../scss/helpers/_h5bp_reset.scss */
+/* line 46, ../scss/helpers/_h5bp_reset.scss */
 ::-moz-selection {
   background: #fe57a1;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 45, ../scss/helpers/_h5bp_reset.scss */
+/* line 47, ../scss/helpers/_h5bp_reset.scss */
 ::selection {
   background: #fe57a1;
   color: #fff;
@@ -77,23 +80,23 @@ body, button, input, select, textarea {
 /* =============================================================================
    Links
    ========================================================================== */
-/* line 52, ../scss/helpers/_h5bp_reset.scss */
+/* line 54, ../scss/helpers/_h5bp_reset.scss */
 a {
   color: #00e;
 }
 
-/* line 53, ../scss/helpers/_h5bp_reset.scss */
+/* line 55, ../scss/helpers/_h5bp_reset.scss */
 a:visited {
   color: #551a8b;
 }
 
-/* line 54, ../scss/helpers/_h5bp_reset.scss */
+/* line 56, ../scss/helpers/_h5bp_reset.scss */
 a:focus {
   outline: thin dotted;
 }
 
 /* Improve readability when focused and hovered in all browsers: people.opera.com/patrickl/experiments/keyboard/test */
-/* line 57, ../scss/helpers/_h5bp_reset.scss */
+/* line 59, ../scss/helpers/_h5bp_reset.scss */
 a:hover, a:active {
   outline: 0;
 }
@@ -101,44 +104,48 @@ a:hover, a:active {
 /* =============================================================================
    Typography
    ========================================================================== */
-/* line 64, ../scss/helpers/_h5bp_reset.scss */
+/* line 66, ../scss/helpers/_h5bp_reset.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 66, ../scss/helpers/_h5bp_reset.scss */
+/* line 68, ../scss/helpers/_h5bp_reset.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 68, ../scss/helpers/_h5bp_reset.scss */
+/* line 70, ../scss/helpers/_h5bp_reset.scss */
 blockquote {
-  margin: 1em 40px;
+  margin: 0 40px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
-/* line 70, ../scss/helpers/_h5bp_reset.scss */
+/* line 72, ../scss/helpers/_h5bp_reset.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 72, ../scss/helpers/_h5bp_reset.scss */
+/* line 74, ../scss/helpers/_h5bp_reset.scss */
 hr {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 1em 0;
+  margin: 0;
   padding: 0;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
-/* line 74, ../scss/helpers/_h5bp_reset.scss */
+/* line 76, ../scss/helpers/_h5bp_reset.scss */
 ins {
   background: #ff9;
   color: #000;
   text-decoration: none;
 }
 
-/* line 76, ../scss/helpers/_h5bp_reset.scss */
+/* line 78, ../scss/helpers/_h5bp_reset.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -147,39 +154,40 @@ mark {
 }
 
 /* Redeclare monospace font family: en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
-/* line 79, ../scss/helpers/_h5bp_reset.scss */
+/* line 81, ../scss/helpers/_h5bp_reset.scss */
 pre, code, kbd, samp {
   font-family: monospace, monospace;
   _font-family: 'courier new', monospace;
   font-size: 1em;
+  line-height: 1.5em;
 }
 
 /* Improve readability of pre-formatted text in all browsers */
-/* line 82, ../scss/helpers/_h5bp_reset.scss */
+/* line 84, ../scss/helpers/_h5bp_reset.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 84, ../scss/helpers/_h5bp_reset.scss */
+/* line 86, ../scss/helpers/_h5bp_reset.scss */
 q {
   quotes: none;
 }
 
-/* line 85, ../scss/helpers/_h5bp_reset.scss */
+/* line 87, ../scss/helpers/_h5bp_reset.scss */
 q:before, q:after {
   content: "";
   content: none;
 }
 
-/* line 87, ../scss/helpers/_h5bp_reset.scss */
+/* line 89, ../scss/helpers/_h5bp_reset.scss */
 small {
   font-size: 85%;
 }
 
 /* Position subscript and superscript content without affecting line-height: gist.github.com/413930 */
-/* line 90, ../scss/helpers/_h5bp_reset.scss */
+/* line 92, ../scss/helpers/_h5bp_reset.scss */
 sub, sup {
   font-size: 75%;
   line-height: 0;
@@ -187,12 +195,12 @@ sub, sup {
   vertical-align: baseline;
 }
 
-/* line 91, ../scss/helpers/_h5bp_reset.scss */
+/* line 93, ../scss/helpers/_h5bp_reset.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 92, ../scss/helpers/_h5bp_reset.scss */
+/* line 94, ../scss/helpers/_h5bp_reset.scss */
 sub {
   bottom: -0.25em;
 }
@@ -200,18 +208,19 @@ sub {
 /* =============================================================================
    Lists
    ========================================================================== */
-/* line 99, ../scss/helpers/_h5bp_reset.scss */
+/* line 101, ../scss/helpers/_h5bp_reset.scss */
 ul, ol {
-  margin: 1em 0;
-  padding: 0 0 0 40px;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  padding-left: 40px;
 }
 
-/* line 100, ../scss/helpers/_h5bp_reset.scss */
+/* line 102, ../scss/helpers/_h5bp_reset.scss */
 dd {
   margin: 0 0 0 40px;
 }
 
-/* line 101, ../scss/helpers/_h5bp_reset.scss */
+/* line 103, ../scss/helpers/_h5bp_reset.scss */
 nav ul, nav ol {
   list-style: none;
   margin: 0;
@@ -225,7 +234,7 @@ nav ul, nav ol {
  * 1. Improve image quality when scaled in IE7 http://h5bp.com/d
  * 2. Remove the gap between images and borders on image containers http://h5bp.com/e 
  */
-/* line 113, ../scss/helpers/_h5bp_reset.scss */
+/* line 115, ../scss/helpers/_h5bp_reset.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -235,7 +244,7 @@ img {
 /*
  * Correct overflow displayed oddly in IE9 
  */
-/* line 119, ../scss/helpers/_h5bp_reset.scss */
+/* line 121, ../scss/helpers/_h5bp_reset.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -243,7 +252,7 @@ svg:not(:root) {
 /* =============================================================================
    Figures
    ========================================================================== */
-/* line 126, ../scss/helpers/_h5bp_reset.scss */
+/* line 128, ../scss/helpers/_h5bp_reset.scss */
 figure {
   margin: 0;
 }
@@ -251,12 +260,12 @@ figure {
 /* =============================================================================
    Forms
    ========================================================================== */
-/* line 133, ../scss/helpers/_h5bp_reset.scss */
+/* line 135, ../scss/helpers/_h5bp_reset.scss */
 form {
   margin: 0;
 }
 
-/* line 134, ../scss/helpers/_h5bp_reset.scss */
+/* line 136, ../scss/helpers/_h5bp_reset.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -267,7 +276,7 @@ fieldset {
  * 1. Correct color not inheriting in IE6/7/8/9 
  * 2. Correct alignment displayed oddly in IE6/7 
  */
-/* line 141, ../scss/helpers/_h5bp_reset.scss */
+/* line 143, ../scss/helpers/_h5bp_reset.scss */
 legend {
   border: 0;
   *margin-left: -7px;
@@ -275,7 +284,7 @@ legend {
 }
 
 /* Indicate that 'label' will shift focus to the associated form element */
-/* line 144, ../scss/helpers/_h5bp_reset.scss */
+/* line 146, ../scss/helpers/_h5bp_reset.scss */
 label {
   cursor: pointer;
 }
@@ -285,7 +294,7 @@ label {
  * 2. Remove margins in FF3/4 S5 Chrome
  * 3. Define consistent vertical alignment display in all browsers
  */
-/* line 152, ../scss/helpers/_h5bp_reset.scss */
+/* line 154, ../scss/helpers/_h5bp_reset.scss */
 button, input, select, textarea {
   font-size: 100%;
   margin: 0;
@@ -297,7 +306,7 @@ button, input, select, textarea {
  * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
  * 2. Correct inner spacing displayed oddly in IE6/7
  */
-/* line 159, ../scss/helpers/_h5bp_reset.scss */
+/* line 161, ../scss/helpers/_h5bp_reset.scss */
 button, input {
   line-height: normal;
   *overflow: visible;
@@ -307,7 +316,7 @@ button, input {
  * 1. Display hand cursor for clickable form elements
  * 2. Allow styling of clickable form elements in iOS
  */
-/* line 166, ../scss/helpers/_h5bp_reset.scss */
+/* line 168, ../scss/helpers/_h5bp_reset.scss */
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
@@ -316,12 +325,12 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
 /*
  * Consistent box sizing and appearance
  */
-/* line 172, ../scss/helpers/_h5bp_reset.scss */
+/* line 174, ../scss/helpers/_h5bp_reset.scss */
 input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
 }
 
-/* line 173, ../scss/helpers/_h5bp_reset.scss */
+/* line 175, ../scss/helpers/_h5bp_reset.scss */
 input[type="search"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
@@ -332,21 +341,21 @@ input[type="search"] {
  * Remove inner padding and border in FF3/4
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ 
  */
-/* line 180, ../scss/helpers/_h5bp_reset.scss */
+/* line 182, ../scss/helpers/_h5bp_reset.scss */
 button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
 /* Remove default vertical scrollbar in IE6/7/8/9 */
-/* line 183, ../scss/helpers/_h5bp_reset.scss */
+/* line 185, ../scss/helpers/_h5bp_reset.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
 /* Colors for form validity */
-/* line 187, ../scss/helpers/_h5bp_reset.scss */
+/* line 189, ../scss/helpers/_h5bp_reset.scss */
 input:invalid, textarea:invalid {
   background-color: #f0dddd;
 }
@@ -354,17 +363,10 @@ input:invalid, textarea:invalid {
 /* =============================================================================
    Tables
    ========================================================================== */
-/* line 194, ../scss/helpers/_h5bp_reset.scss */
+/* line 196, ../scss/helpers/_h5bp_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-/* line 1, ../scss/helpers/_reset.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 /* =============================================================================
@@ -438,6 +440,33 @@ table {
 /* line 27, ../scss/helpers/_non-semantic-helpers.scss */
 .clearfix {
   zoom: 1;
+}
+
+/* line 12, ../scss/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 15, ../scss/style.scss */
+body {
+  font-size: 0.85em;
+  line-height: 1.765em;
+}
+@media (min-width: 50.5em) {
+  /* line 15, ../scss/style.scss */
+  body {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+@media (min-width: 78.5em) {
+  /* line 15, ../scss/style.scss */
+  body {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
 }
 
 /*  Font Awesome
@@ -1254,23 +1283,8 @@ li[class*=" icon-"].icon-large:before {
   content: "\f094";
 }
 
-/* line 4, ../scss/_type.scss */
-h1 abbr[title], h2 abbr[title], h3 abbr[title], h4 abbr[title], h5 abbr[title], h6 abbr[title] {
-  border: none;
-}
-/* line 7, ../scss/_type.scss */
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-size: inherit;
-  font-weight: normal;
-}
-
-/* line 16, ../scss/_type.scss */
-body {
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-}
-
-/* line 23, ../scss/_type.scss */
-h1, h2 {
+/* line 3, ../scss/_type.scss */
+h1, h2, h3, p, li {
   -webkit-transition: all 125ms;
   -moz-transition: all 125ms;
   -ms-transition: all 125ms;
@@ -1283,58 +1297,89 @@ h1, h2 {
   transform: translateZ(0, 0, 0);
 }
 
-/* line 27, ../scss/_type.scss */
-h1 {
-  font-size: 2em;
-  color: rgba(0, 0, 0, 0.65);
+/* line 8, ../scss/_type.scss */
+h1 + p, h2 + p, h3 + p, h4 + p {
+  margin-top: 0;
 }
-@media screen and (min-width: 1000px) {
-  /* line 27, ../scss/_type.scss */
+
+/* line 12, ../scss/_type.scss */
+h1 {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 1.8em;
+  line-height: 1.042em;
+}
+@media (min-width: 50.5em) {
+  /* line 12, ../scss/_type.scss */
   h1 {
-    font-size: 4em;
+    font-size: 2.75em;
+    line-height: 1.091em;
   }
 }
-/* line 33, ../scss/_type.scss */
-h1 small {
-  font-size: .5em;
+/* line 20, ../scss/_type.scss */
+.front h1 {
+  padding-top: 1.091em;
+}
+/* line 22, ../scss/_type.scss */
+.front h1 small {
+  font-weight: normal;
+  font-size: 0.688em;
+  line-height: 1.091em;
   color: rgba(0, 0, 0, 0.35);
 }
+@media (min-width: 50.5em) {
+  /* line 20, ../scss/_type.scss */
+  .front h1 {
+    font-size: 3em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+  }
+}
 
-/* line 38, ../scss/_type.scss */
+/* line 34, ../scss/_type.scss */
 h2 {
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #8c8c8c;
-  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 1.5em;
+  line-height: 1.15em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+/* line 40, ../scss/_type.scss */
+header h2 {
   font-size: 1em;
+  line-height: 1.725em;
+  margin-top: 0em;
 }
-@media screen and (min-width: 1000px) {
-  /* line 38, ../scss/_type.scss */
-  h2 {
-    font-size: 2em;
-  }
-}
-
-/* line 54, ../scss/_type.scss */
-[role="document"] p, [role="document"] li {
-  line-height: 1.5;
-}
-@media screen and (min-width: 1000px) {
-  /* line 54, ../scss/_type.scss */
-  [role="document"] p, [role="document"] li {
+@media (min-width: 50.5em) {
+  /* line 40, ../scss/_type.scss */
+  header h2 {
     font-size: 1.5em;
+    line-height: 1.5em;
   }
 }
 
-@media screen and (min-width: 1000px) {
-  /* line 65, ../scss/_type.scss */
-  [role="banner"] {
-    font-size: 2em;
-  }
+/* line 52, ../scss/_type.scss */
+h3 {
+  margin-bottom: 0em;
+  color: rgba(0, 0, 0, 0.85);
+  font-style: italic;
 }
 
-/* line 71, ../scss/_type.scss */
+/* line 112, ../scss/_type.scss */
+ul, ol {
+  padding-left: 1.5em;
+}
+
+/* line 115, ../scss/_type.scss */
+p, li, blockquote {
+  margin-bottom: 1.5em;
+  margin-top: 0;
+}
+/* line 118, ../scss/_type.scss */
+p:first-child, li:first-child, blockquote:first-child {
+  margin-top: 1.5em;
+}
+
+/* line 186, ../scss/_type.scss */
 a {
   -webkit-transition: 125ms ease-out;
   -moz-transition: 125ms ease-out;
@@ -1342,13 +1387,34 @@ a {
   -o-transition: 125ms ease-out;
   transition: 125ms ease-out;
 }
-/* line 72, ../scss/_type.scss */
+/* line 187, ../scss/_type.scss */
 a, a:visited {
   color: #22669b;
 }
-/* line 76, ../scss/_type.scss */
+/* line 191, ../scss/_type.scss */
 a:hover {
   color: #d5613e;
+}
+
+/* line 6, ../scss/_grid.scss */
+.container, [role="document"] {
+  max-width: 26.5em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.container:after, [role="document"]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 50.5em) {
+  /* line 6, ../scss/_grid.scss */
+  .container, [role="document"] {
+    max-width: 47.5em;
+  }
 }
 
 /* line 1, ../scss/_appearance.scss */
@@ -1361,7 +1427,6 @@ nav {
 /* line 4, ../scss/_appearance.scss */
 nav ol, nav ul {
   overflow: hidden;
-  *zoom: 1;
 }
 /* line 9, ../scss/_appearance.scss */
 nav li {
@@ -1422,13 +1487,6 @@ nav li [class^="icon-"]:hover {
 }
 
 /* line 49, ../scss/_appearance.scss */
-[role="document"] {
-  padding: 2.5% 7.5%;
-  margin: 0 auto 4em;
-  max-width: 80em;
-}
-
-/* line 55, ../scss/_appearance.scss */
 [role="footer"] {
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
@@ -1636,43 +1694,42 @@ nav li [class^="icon-"]:hover {
   background: -o-linear-gradient(#ffffff, #e6e6e6);
   background: -ms-linear-gradient(#ffffff, #e6e6e6);
   background: linear-gradient(#ffffff, #e6e6e6);
-  margin: 0;
-  padding: 2.5% 7.5%;
-  padding-bottom: 15%;
+  padding-bottom: 3em;
 }
 /* line 17, ../scss/components/_social.scss */
 #social h2 {
   text-align: center;
-  margin-bottom: 1em;
 }
-/* line 22, ../scss/components/_social.scss */
+/* line 21, ../scss/components/_social.scss */
 .fontface #social ul {
   list-style: none;
   overflow: hidden;
-  *zoom: 1;
   margin: 0;
-  padding: 0;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   margin-bottom: 2em;
+  padding-left: 0;
 }
-/* line 11, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+/* line 11, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
 .fontface #social ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
 }
-/* line 29, ../scss/components/_social.scss */
+/* line 30, ../scss/components/_social.scss */
 .fontface #social li {
-  display: block;
   width: 25%;
   float: left;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
-@media screen and (min-width: 600px) {
-  /* line 29, ../scss/components/_social.scss */
+@media (min-width: 50.5em) {
+  /* line 30, ../scss/components/_social.scss */
   .fontface #social li {
     width: 14.286%;
   }
 }
-/* line 37, ../scss/components/_social.scss */
+/* line 39, ../scss/components/_social.scss */
 .fontface #social a {
   display: block;
   -webkit-border-radius: 1em;
@@ -1692,302 +1749,148 @@ nav li [class^="icon-"]:hover {
   font-family: zocial;
   color: rgba(0, 0, 0, 0.35);
 }
-/* line 48, ../scss/components/_social.scss */
+/* line 50, ../scss/components/_social.scss */
 .fontface #social a:hover {
   text-shadow: white 0 2px 10px;
 }
-/* line 52, ../scss/components/_social.scss */
+/* line 54, ../scss/components/_social.scss */
 .fontface #social span {
   display: none;
 }
-/* line 55, ../scss/components/_social.scss */
+/* line 57, ../scss/components/_social.scss */
 .fontface #social .twitter a:hover {
   color: #46c0fb;
 }
-/* line 58, ../scss/components/_social.scss */
+/* line 60, ../scss/components/_social.scss */
 .fontface #social .linkedin a:hover {
   color: #0083a8;
 }
-/* line 61, ../scss/components/_social.scss */
+/* line 63, ../scss/components/_social.scss */
 .fontface #social .dribbble a:hover {
   color: #ea4c89;
 }
-/* line 64, ../scss/components/_social.scss */
+/* line 66, ../scss/components/_social.scss */
 .fontface #social .github a:hover {
   color: black;
 }
-/* line 67, ../scss/components/_social.scss */
+/* line 69, ../scss/components/_social.scss */
 .fontface #social .lastfm a:hover {
   color: #dc1a23;
 }
-/* line 70, ../scss/components/_social.scss */
+/* line 72, ../scss/components/_social.scss */
 .fontface #social .rdio a:hover {
   color: #00a9f9;
 }
-/* line 73, ../scss/components/_social.scss */
+/* line 75, ../scss/components/_social.scss */
 .fontface #social .pinboard a:hover {
   color: blue;
 }
-@media screen and (min-width: 1000px) {
-  /* line 10, ../scss/components/_social.scss */
-  #social {
-    font-size: 2em;
-  }
+
+/* line 84, ../scss/components/_social.scss */
+[role="footer"] {
+  font-size: 0.75em;
+  line-height: 2em;
 }
 
-@media screen and (min-width: 600px) {
-  /* line 4, ../scss/components/_front.scss */
-  .front nav li {
-    float: left;
-    width: 25%;
-  }
+/* line 2, ../scss/components/_front.scss */
+.front blockquote {
+  margin-left: 0;
+  margin-right: 0;
 }
-/* line 11, ../scss/components/_front.scss */
-.front section ol, .front section ul {
+/* line 5, ../scss/components/_front.scss */
+.front blockquote p {
+  margin-top: 0;
+}
+/* line 9, ../scss/components/_front.scss */
+.front ol, .front ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  *zoom: 1;
+  padding-left: 0;
 }
-/* line 11, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
-.front section ol li, .front section ul li {
+/* line 11, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+.front ol li, .front ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
 }
-/* line 18, ../scss/components/_front.scss */
-.front #about {
-  display: none;
-}
-@media screen and (min-width: 1000px) {
-  /* line 22, ../scss/components/_front.scss */
-  .front [role="document"] {
-    overflow: hidden;
-    *zoom: 1;
-  }
-  /* line 24, ../scss/components/_front.scss */
-  .front [role="document"] header, .front [role="document"] nav, .front [role="document"] section, .front [role="document"] footer {
-    float: left;
-    width: 100%;
-  }
-  /* line 28, ../scss/components/_front.scss */
-  .front [role="document"] header, .front [role="document"] nav {
-    clear: both;
-  }
-}
-@media screen and (min-width: 1000px) and (min-width: 1000px) {
-  /* line 32, ../scss/components/_front.scss */
-  .front [role="document"] section {
-    padding-top: 1em;
-  }
-}
-/* line 49, ../scss/components/_front.scss */
-.front .featured {
-  clear: both;
-  text-align: center;
-  padding-bottom: 0;
-  font-weight: bold;
-  font-size: 24px;
-}
-
-/* line 60, ../scss/components/_front.scss */
-#writing h2 small {
+/* line 14, ../scss/components/_front.scss */
+.front h2 small {
   display: block;
   font-weight: bold;
-  font-size: .65em;
   color: #a5bbcc;
+  font-size: 0.75em;
+  line-height: 2em;
 }
-/* line 67, ../scss/components/_front.scss */
-#writing blockquote {
-  margin: 0;
-  line-height: 1.65;
-}
-@media screen and (min-width: 1000px) {
-  /* line 72, ../scss/components/_front.scss */
-  #writing h2 {
-    font-size: 2em;
-  }
-}
-/* line 76, ../scss/components/_front.scss */
-#writing li {
-  margin: 4em 0;
-}
-/* line 105, ../scss/components/_front.scss */
-#writing a {
+/* line 21, ../scss/components/_front.scss */
+.front a {
   text-decoration: none;
 }
 
-/* line 110, ../scss/components/_front.scss */
-#design {
+/* line 26, ../scss/components/_front.scss */
+.front #about, .front #design {
   display: none;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(70%, #293447), color-stop(100%, #131424)) fixed;
-  background: -webkit-linear-gradient(#293447 70%, #131424) fixed;
-  background: -moz-linear-gradient(#293447 70%, #131424) fixed;
-  background: -o-linear-gradient(#293447 70%, #131424) fixed;
-  background: -ms-linear-gradient(#293447 70%, #131424) fixed;
-  background: linear-gradient(#293447 70%, #131424) fixed;
-  color: rgba(255, 255, 255, 0.75);
-}
-/* line 114, ../scss/components/_front.scss */
-#design h2 {
-  text-align: center;
-  font-size: 36px;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  color: white;
-}
-/* line 119, ../scss/components/_front.scss */
-#design h2 small {
-  font-family: "Baskerville", "Palatino Linotype", fantasy;
-  color: rgba(255, 255, 255, 0.55);
-}
-/* line 123, ../scss/components/_front.scss */
-#design h2 abbr {
-  font-family: Zapfino;
-}
-/* line 127, ../scss/components/_front.scss */
-#design li {
-  width: 50%;
-  float: left;
-}
-@media screen and (min-width: 1250px) {
-  /* line 127, ../scss/components/_front.scss */
-  #design li {
-    width: 33.33333%;
-  }
-}
-/* line 134, ../scss/components/_front.scss */
-#design a {
-  display: block;
-  margin: 8px 10% 10%;
-  background: rgba(255, 255, 255, 0.92);
-  padding: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0 1em 10px -0.5em;
-  -moz-box-shadow: rgba(0, 0, 0, 0.35) 0 1em 10px -0.5em;
-  box-shadow: rgba(0, 0, 0, 0.35) 0 1em 10px -0.5em;
-  -webkit-transition: 125ms ease-out;
-  -moz-transition: 125ms ease-out;
-  -ms-transition: 125ms ease-out;
-  -o-transition: 125ms ease-out;
-  transition: 125ms ease-out;
-  max-width: 400px;
-}
-/* line 143, ../scss/components/_front.scss */
-#design a:hover {
-  border-color: rgba(0, 0, 0, 0.22);
-  -webkit-transform: scale(1.1, 1.1) rotate(-2deg);
-  -moz-transform: scale(1.1, 1.1) rotate(-2deg);
-  -ms-transform: scale(1.1, 1.1) rotate(-2deg);
-  -o-transform: scale(1.1, 1.1) rotate(-2deg);
-  transform: scale(1.1, 1.1) rotate(-2deg);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0 0.5em 15px -0.5em;
-  -moz-box-shadow: rgba(0, 0, 0, 0.35) 0 0.5em 15px -0.5em;
-  box-shadow: rgba(0, 0, 0, 0.35) 0 0.5em 15px -0.5em;
-}
-@media screen and (min-width: 1000px) {
-  /* line 134, ../scss/components/_front.scss */
-  #design a {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (min-width: 1250px) {
-  /* line 134, ../scss/components/_front.scss */
-  #design a {
-    margin-left: 7%;
-    margin-right: 7%;
-  }
-}
-/* line 158, ../scss/components/_front.scss */
-#design img {
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-/* line 162, ../scss/components/_front.scss */
-.js #design img.full-size {
-  display: none;
-}
-@media screen and (min-width: 600px) {
-  /* line 161, ../scss/components/_front.scss */
-  .js #design img {
-    display: none;
-  }
-  /* line 167, ../scss/components/_front.scss */
-  .js #design img.full-size {
-    display: block;
-  }
 }
 
 /* line 2, ../scss/components/_posts.scss */
 .single nav {
   margin: 0;
-  padding: 2.5% 7.5%;
-}
-/* line 5, ../scss/components/_posts.scss */
-.single nav li {
-  width: 10%;
+  padding: 0;
+  margin-bottom: 3em;
 }
 /* line 7, ../scss/components/_posts.scss */
-.single nav li i {
-  font-size: 2em;
+.single nav li {
+  width: 10%;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  margin: 0;
+  padding: 0 1em;
 }
-/* line 10, ../scss/components/_posts.scss */
+/* line 7, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+.single nav li {
+  *display: inline;
+}
+@media (min-width: 50.5em) {
+  /* line 12, ../scss/components/_posts.scss */
+  .single nav li i {
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+}
+/* line 17, ../scss/components/_posts.scss */
 .single nav li:first-child {
   width: 45%;
   text-align: left;
 }
-/* line 14, ../scss/components/_posts.scss */
+/* line 21, ../scss/components/_posts.scss */
 .single nav li:last-child {
   width: 45%;
   text-align: right;
 }
-/* line 21, ../scss/components/_posts.scss */
-.single section img {
-  max-width: 100%;
-}
-/* line 24, ../scss/components/_posts.scss */
-.single section .img {
-  width: 150%;
-  margin-left: -25%;
-}
-/* line 38, ../scss/components/_posts.scss */
-.single blockquote {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  font-style: italic;
-  font-family: Palatino, Palladio, georgia, serif;
-}
-/* line 43, ../scss/components/_posts.scss */
-.single blockquote em {
-  font-style: normal;
-}
-/* line 48, ../scss/components/_posts.scss */
+/* line 28, ../scss/components/_posts.scss */
 .single .byline {
   color: rgba(0, 0, 0, 0.45);
-  line-height: 1.5;
-  margin: 0 0 2em;
-  border: rgba(0, 0, 0, 0.15) solid;
-  border-width: 0 0 1px;
-  padding: 2em 0;
+  background: white;
+  padding-bottom: 0.75em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: rgba(0, 0, 0, 0.25) double;
+  border-width: 0 0 3px 0;
 }
-/* line 51, ../scss/components/_posts.scss */
+/* line 31, ../scss/components/_posts.scss */
 .single .byline a {
   color: rgba(0, 0, 0, 0.65);
 }
-/* line 54, ../scss/components/_posts.scss */
+/* line 34, ../scss/components/_posts.scss */
 .single .byline p {
   margin: 0;
 }
-@media screen and (min-width: 1000px) {
-  /* line 48, ../scss/components/_posts.scss */
+@media (min-width: 50.5em) {
+  /* line 28, ../scss/components/_posts.scss */
   .single .byline {
-    margin: 1em 0 4em;
+    padding-bottom: 1.5em;
+    margin-bottom: 3em;
   }
 }
 
@@ -2008,15 +1911,15 @@ nav li [class^="icon-"]:hover {
 .steve article a {
   color: #fbfbfb;
 }
-/* line 18, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .steve article a:visited {
   color: #fbfbfb;
 }
-/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .steve article a:hover {
   color: #fbfbfb;
 }
-/* line 27, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 .steve article a:active {
   color: #fbfbfb;
 }
