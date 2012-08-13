@@ -54,7 +54,7 @@ body {
 
 /* line 38, ../scss/helpers/_h5bp_reset.scss */
 body, button, input, select, textarea {
-  font-family: sans-serif;
+  font-family: Avenir Next, sans-serif;
   color: #222;
 }
 
